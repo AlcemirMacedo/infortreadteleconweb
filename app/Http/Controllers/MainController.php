@@ -8,6 +8,6 @@ class MainController extends Controller
 {
 
     public function index(){
-        return view('/mainLayout', ["name" => "Alcemir"]);
+        return view('homeView', ["name" => "Alcemir"]);
     }
 }
