@@ -1,66 +1,47 @@
-header{
-    background-color: #3E4095;
-    height: 80px;
-    display: flex;
+/* Braah Font bold */
+@font-face {
+    font-family: 'Braah';
+    src: url('../fonts/BraahOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Regular font */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Light font */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+/* Bold font */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root{
+    --blue-1: #130064;
+    --blue-2: #1F5DAE;
+    --orange-1: #E36600;
+    --orange-2: #ED2600;
+    --green-contact: #55B34D;
+    --black-1: #000000;
+    --gray-1: #D9D9D9;
+    --gray-2: #616161;
+    --white: #FFFFFF;
+}
+
+body{
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
     padding: 0;
-}
-
-.header-style{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-
-.menu-togle > div:nth-child(1), div:nth-child(2){
-    margin-bottom: 7px;
-}
-
-
-@media(max-width: 768px){
-    .menu-list{
-        display: none;
-    }
-    .menu-togle{
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .menu-togle > div {
-        justify-content: center;
-        width: 30px;
-        height: 5px;
-        border-radius: 20%;
-        background-color: #3E4095;
-    }
-    .config-header{
-        display: none;
-    }
-    .logo-header{
-        flex: 1;
-        height: 60px;
-        margin-left: 10px;
-    }
-
-    .nav-header{
-        display: flex;
-        flex: 2;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-        margin-right: 5px;
-    }
+    box-sizing: border-box;
 }
