@@ -1,0 +1,16 @@
+.about-section .container{
+    padding: 0px 28px 0px 28px;
+}
+
+.about-section h1{
+    font-family: 'Braah';
+    font-size: 20px;
+    color: var(--blue-2);
+}
+
+.about-section p{
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 14px;
+    color: var(--blue-2);
+}

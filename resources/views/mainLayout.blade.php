@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href={{ asset('css/global.css') }}>
     <link rel="stylesheet" href={{ asset('css/banner-header.css') }}>
+    <link rel="stylesheet" href={{ asset('css/about.css') }}>
     <title>Infortread Telecom</title>
 </head>
 <body>

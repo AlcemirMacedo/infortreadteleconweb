@@ -1,71 +1,142 @@
-.banner{
-    position: relative;
-    height: 365px;
-    width: 100vw;
-    background: url('../images/computer-sistem-hand.jpeg');
-    background-position: center;
-    background-size: cover;
-    border-bottom: 5px solid var(--blue-2);
-}
-.fade-bg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.fade-bg img{
-    width: 192px;
-    margin-bottom: 17px;
-}
-.fade-bg h2{
-    width: 225px;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: lighter;
-    font-size: 16px;
-    line-height: 150%;
-    margin: 0;
-    padding: 0;
-    text-shadow: 2px 2px 0 black;
+/* CSS do topo do site incluindo menu banner e botão de contato */
+.menu-toggle{
+    display: none;
 }
 
-.fade-bg .area-cta{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 231px;
-    height: 71px;
-    bottom: 0;
-    background-color: var(--gray-1);
-    border-radius: 30px 30px 0 0;
-}
-.fade-bg .area-cta .btn-cta{
-    background-color: var(--green-contact);
-    color: var(--white);
-    text-transform: uppercase;
-    width: 178px;
-    font-weight: lighter;
-    font-size: 11px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+@media (max-width: 600px) {
+    .banner{
+        position: relative;
+        height: 365px;
+        width: 100vw;
+        background: url('../images/computer-sistem-hand.jpeg');
+        background-position: center;
+        background-size: cover;
+        border-bottom: 5px solid var(--blue-2);
+    }
 
-.fade-bg .area-cta .btn-cta p{
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
+    /* menu toggle */
+    .menu-toggle{
+        position:absolute;
+        top: 15px;
+        right: 15px;
+        height: 37px;
+        width: 37px;
+        border-radius: 50px;
+        background-color: var(--gray-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu-toggle>div{
+        height: 15px;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menu-toggle div>div{
+        height: 1px;
+        width: 20px;
+        background-color: white;
+    }
 
-.fade-bg .area-cta .btn-cta img{
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-}
+    .share{
+        position:absolute;
+        top: 66px;
+        right: 15px;
+        height: 37px;
+        width: 37px;
+        border-radius: 50px;
+        background-color: var(--gray-2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .share>div{
+        width: 20px;
+        height: 24px;
+    }
+    .share>div img{
+        height: 24px;
+        width: 20px;
+    }
 
+
+    .fade-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* logo e texto principal */
+
+    .banner-content{
+        margin-top: -75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fade-bg img{
+        width: 192px;
+        margin-bottom: 17px;
+    }
+    .fade-bg h2{
+        width: 225px;
+        text-align: center;
+        color: var(--white);
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        text-shadow: 2px 2px 0 black;
+    }
+
+    .fade-bg .area-cta{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 231px;
+        height: 71px;
+        bottom: 0;
+        background-color: var(--white);
+        border-radius: 30px 30px 0 0;
+    }
+    .fade-bg .area-cta .btn-cta{
+        background-color: var(--green-contact);
+        color: var(--white);
+        text-transform: uppercase;
+        width: 178px;
+        height: 34px;
+        font-weight: lighter;
+        font-size: 11px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .fade-bg .area-cta .btn-cta:hover{
+        background-color: var(--blue-2);
+    }
+
+    .fade-bg .area-cta .btn-cta p{
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .fade-bg .area-cta .btn-cta img{
+        width: 20px;
+        height: 21px;
+        margin-top: 15px;
+    }
+
+}
