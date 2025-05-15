@@ -44,4 +44,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+h2{
+    font-family: 'Comfortaa';
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--blue-2);
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href={{ asset('css/global.css') }}>
     <link rel="stylesheet" href={{ asset('css/banner-header.css') }}>
     <link rel="stylesheet" href={{ asset('css/about.css') }}>
+    <link rel="stylesheet" href={{ asset('css/locais.css') }}>
     <title>Infortread Telecom</title>
 </head>
 <body>

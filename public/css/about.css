@@ -1,16 +1,78 @@
-.about-section .container{
-    padding: 0px 28px 0px 28px;
+.about_section .container{
+    padding: 0px 18px 0px 18px;
 }
 
-.about-section h1{
+.about_section h1{
     font-family: 'Braah';
     font-size: 20px;
     color: var(--blue-2);
 }
 
-.about-section p{
+.about_section p{
     font-size: 12px;
     font-weight: lighter;
     line-height: 14px;
     color: var(--blue-2);
 }
+
+.about_section .paralax{
+    background-image: url('../images/fachada-de-empresa.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 139px;
+    width: 100%;
+}
+
+.mvv{
+    padding: 0px 10px 0px 10px;
+}
+.about_section .img_float img{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.about_section .img_float figcaption{
+    font-size: 7px;
+    float: right;
+}
+/* Missão, Visão e Valores */
+.missao, .valores{
+    border-left: 2px var(--gray-1) dotted;
+    border-bottom: 2px var(--gray-1) dotted;
+    border-radius: 0px 0px 0px 10px;
+    margin-left: 15px;
+    margin-right: 22px;
+    margin-bottom: 0;
+}
+.visao{
+    border-right: 2px var(--gray-1) dotted;
+    border-bottom: 2px var(--gray-1) dotted;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+}
+.visao h2, .missao h2, .valores h2{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.visao p, .missao p, .valores p{
+    color: var(--gray-2);
+    font-size: 12px;
+}
+.valores{
+    border-radius: 10px 0 0 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.valores img{
+    width: 150px;
+    height: 150px;
+}
+

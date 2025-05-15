@@ -1,0 +1,47 @@
+.locais_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/mapa.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    background-position: center;
+}
+
+.locais_section h1{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: var(--orange-1);
+    font-family: 'Braah', sans-serif;
+}
+
+.mapa-container {
+  position: relative;
+  width: 350px;
+  height: 480px;
+  background-image: url('seu-mapa.png'); /* Substitua pelo caminho real */
+  background-size: cover;
+  background-position: center;
+}
+
+.linhas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.mapa-container .text_map{
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    max-width: 190px;
+    position:absolute;
+    
+}
+.mapa-container .text_map span{
+    color: var(--orange-2);
+}
