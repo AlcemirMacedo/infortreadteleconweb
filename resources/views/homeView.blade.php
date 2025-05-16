@@ -109,14 +109,14 @@
             <circle cx="180" cy="200" r="4" fill="#E36600" />
 
             <!-- Canutama -->
-            <path d="M 150 210 H 10 V 380" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
+            <path d="M 150 210 H 10 V 320" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
             <circle cx="150" cy="210" r="4" fill="#E36600" />
-            <circle cx="10" cy="380" r="4" fill="#E36600" />
+            <circle cx="10" cy="320" r="4" fill="#E36600" />
 
             <!-- Beruri -->
             <path d="M 200 220 H 330 V 350" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
             <circle cx="200" cy="220" r="4" fill="#E36600" />
-            <circle cx="330" cy="350" r="4" fill="#E36600" />
+            <circle cx="330" cy="360" r="4" fill="#E36600" />
         </svg>
         <div class="text_map" style="left: 30px; top: 18px;">
             <span>Coari</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
@@ -124,7 +124,12 @@
         <div class="text_map" style="text-align:right; top: 47px; right:20px">
             <span>Tefé</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </div>
-
+        <div class="text_map" style="text-align:left; top: 295px; left:20px">
+            <span>Canutama</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </div>
+        <div class="text_map" style="text-align:right; top: 335px; right:30px">
+            <span>Beruri</span> - Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
+        </div>
     </div>
 
 </section>
