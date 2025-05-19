@@ -1,4 +1,4 @@
-.about_section .container{
+.container{
     padding: 0px 18px 0px 18px;
 }
 
@@ -74,5 +74,27 @@
 .valores img{
     width: 150px;
     height: 150px;
+}
+
+.locais_section .locais_list h3{
+    font-size: 9px;
+    color: var(--orange-1);
+    margin-top: 20px;
+}
+
+.locais_section .locais_list ul{
+    padding-left: 10px;
+}
+
+.locais_section .locais_list li{
+    width: 50%;
+    line-height: 12px;
+    padding: 0;
+}
+
+.locais_section .locais_list ul li::marker{
+    color: var(--orange-1);
+    font-size: 11px;
+    margin-top: 0;
 }
 

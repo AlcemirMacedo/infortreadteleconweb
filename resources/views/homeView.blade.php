@@ -95,7 +95,7 @@
     </div> --}}
     <h1>Locais de atuação</h1>
     <div class="mapa-container">
-    <!-- SVG com linhas pontilhadas -->
+        <!-- SVG com linhas pontilhadas -->
         <svg class="linhas" width="100%" height="100%">
 
             <!-- Coari -->
@@ -118,6 +118,7 @@
             <circle cx="200" cy="220" r="4" fill="#E36600" />
             <circle cx="330" cy="360" r="4" fill="#E36600" />
         </svg>
+
         <div class="text_map" style="left: 30px; top: 18px;">
             <span>Coari</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
         </div>
@@ -132,6 +133,29 @@
         </div>
     </div>
 
+    <div class=" container locais_list">
+        <h3>Outras Localidades onde a Infortread atua:</h3>
+        <ul>
+            <div style="display: flex; flex-wraP: wrap; font-size:9px; text-align: left">
+                <li>Boa do Acre</li>
+                <li>Anamã</li>
+                <li>Tefé</li>
+                <li>Borba</li>
+                <li>Careiro</li>
+                <li>Manacapuru</li>
+                <li>Itacoatiara</li>
+                <li>Borba</li>
+                <li>Cacau Pireira</li>
+                <li>Urucurituba</li>
+                <li>Careiro Castanho</li>
+                <li>Canutama</li>
+            </div>
+        </ul>
+    </div>
+</section>
+
+<section class="services_section">
+    <img src={{ asset('images/system_infortread_services.png') }} alt="Serviços">
 </section>
 
 <script>
