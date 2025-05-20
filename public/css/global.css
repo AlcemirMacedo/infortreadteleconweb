@@ -5,7 +5,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 /* Regular font */
 @font-face {
     font-family: 'Comfortaa';
@@ -38,7 +37,6 @@
     --gray-2: #616161;
     --white: #FFFFFF;
 }
-
 body{
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
@@ -46,10 +44,25 @@ body{
     box-sizing: border-box;
     padding-bottom: 50px;
 }
-
+h1{
+    font-family: 'Braah';
+    font-size: 20px;
+    color: var(--blue-2);
+    margin: 0;
+    padding: 0;
+}
 h2{
     font-family: 'Comfortaa';
     font-weight: normal;
     font-size: 14px;
+    color: var(--blue-2);
+}
+h3{
+    font-family: 'Braah';
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--orange-1);
+}
+span{
     color: var(--blue-2);
 }

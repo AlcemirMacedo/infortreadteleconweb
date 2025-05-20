@@ -1,6 +1,8 @@
 @extends('mainLayout')
 
 @section('content')
+
+
 {{-- Banner e Menu --}}
 <section class="banner">
     <div class="fade-bg">
@@ -38,7 +40,7 @@
 <section class="about_section">
 
     <div class="container">
-        <h1>Sobre a Infortread</h1>
+        <h1 style="margin-top: 10px">Sobre a Infortread</h1>
         <p>
             Fundada em 2009, a Infortread atua no setor de tecnologia da informação, com especialização no desenvolvimento de sistemas e na distribuição de internet, tendo como principal foco os municípios do Estado do Amazonas.
         </p>
@@ -88,12 +90,84 @@
     </div>
 </section>
 
+{{-- Sessão de Sistemas e serviços --}}
+<section class="services_section">
+    <img src={{ asset('images/system_infortread_services.png') }} alt="Sistemas">
+    <h1 style="margin-bottom: 10px">Nossos Sistemas</h1>
+
+    <div class="sistems_card">
+        <h1>E-notas</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="sistems_card">
+        <h1>E-social</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="sistems_card">
+        <h1>E-contas</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="sistems_card">
+        <h1>Contra-cheque Online</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="sistems_card">
+        <h1>Compras e Estoque</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="sistems_card">
+        <h1>Cidade Digital</h1>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+        <button>Contratar</button>
+    </div>
+
+    <div class="services">
+        <img src={{ asset('images/services_icon.png') }} alt="Serviços">
+        <h1 style="margin-bottom: 15px">Nossos Serviços</h1>
+
+        <div class="service_card">
+            <div>
+                <img src={{ asset('images/developer_icon.png') }} alt="Desenvolvimento de Sistemas">
+            </div>
+            <div style="margin-left: 15px">
+                <h3 style="line-height:21px">Desenvolvimento de Sistemas</h3>
+                <p style="margin-top: -10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  Saiba mais</span></p>
+            </div>
+        </div>
+
+        <div class="service_card">
+            <div style="text-align: right; margin-right: 15px">
+                <h3 style="line-height:21px">Internet Fibra Óptica</h3>
+                <p style="margin-top: -10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  Saiba mais</span></p>
+            </div>
+            <div>
+                <img src={{ asset('images/fiber_net.png') }} alt="Desenvolvimento de Sistemas">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{{-- Sessão de Locais de Atuação --}}
 <section class="locais_section">
     {{--
     <div class="mapa">
         <img src={{ asset('images/mapa.png') }} alt="Amazonas" >
-    </div> --}}
+    </div>
+    --}}
+
     <h1>Locais de atuação</h1>
+
     <div class="mapa-container">
         <!-- SVG com linhas pontilhadas -->
         <svg class="linhas" width="100%" height="100%">
@@ -152,10 +226,21 @@
             </div>
         </ul>
     </div>
+
 </section>
 
-<section class="services_section">
-    <img src={{ asset('images/system_infortread_services.png') }} alt="Serviços">
+{{-- Helpe Desk section --}}
+<section class="help_section">
+    <section class="numbers">
+        <div>
+            <pre>+100</pre>
+            <p>Clientes em todo estado do Amazonas</p>
+        </div>
+        <div>
+            <pre>+250</pre>
+            <p>Sistemas Ativos em nuvens e desktop</p>
+        </div>
+    </section>
 </section>
 
 <script>

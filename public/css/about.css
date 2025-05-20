@@ -2,12 +2,6 @@
     padding: 0px 18px 0px 18px;
 }
 
-.about_section h1{
-    font-family: 'Braah';
-    font-size: 20px;
-    color: var(--blue-2);
-}
-
 .about_section p{
     font-size: 12px;
     font-weight: lighter;
