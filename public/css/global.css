@@ -42,7 +42,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-bottom: 50px;
 }
 h1{
     font-family: 'Braah';
@@ -65,4 +64,15 @@ h3{
 }
 span{
     color: var(--blue-2);
+}
+.button_1{
+   width: 156px;
+   height: 40px;
+   border-radius: 20px;
+   background-color: white;
+   color: var(--blue-2);
+   font-family: 'Comfortaa';
+   font-size: 12px;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+   border: none;
 }

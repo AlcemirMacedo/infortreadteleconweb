@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 {{-- Banner e Menu --}}
 <section class="banner">
     <div class="fade-bg">
@@ -16,13 +15,13 @@
             </div>
             <div class="share">
                 <div>
-                    <img src={{ asset('images/share-bgt.png') }} height="20" width="20" alt="Compartilhar">
+                    <img src="{{ asset('images/share-bgt.png') }}" height="20" width="20" alt="Compartilhar">
                 </div>
             </div>
         </header>
         {{-- Logo e frase inicial --}}
         <div class="banner-content">
-            <img src={{ asset('images/logo-w.png') }} alt="Infortread Telecom">
+            <img src="{{ asset('images/logo-w.png') }}" alt="Infortread Telecom">
             <h2>A melhor solução para sua empresa ou instituição</h2>
 
             {{-- Botão do CTA --}}
@@ -59,7 +58,7 @@
             A Infortread também oferece capacitação completa para a utilização de seus sistemas, além de suporte técnico eficiente para todos os serviços fornecidos. Seu objetivo é oferecer soluções rápidas e eficazes para os desafios enfrentados pelos clientes.
         </p>
         <figure>
-            <img src={{ asset('images/data-center.png') }} alt="Data Center">
+            <img src="{{ asset('images/data-center.png') }}" alt="Data Center">
             <figcaption>Datacenter Infortread - Manaus-AM</figcaption>
         </figure>
         <p>
@@ -86,13 +85,13 @@
                 Satisfação completa do cliente;  com o crescimento da  organização; autonomia com responsabilidade e integridade; agilidade na  tomada de decisões simplicidade e qualidade; valorização e respeito  pelas relações.
             </p>
         </div>
-        <img src={{ asset('images/valores-img.jpeg') }} alt="Valores" style="margin-bottom: 10px">
+        <img src="{{ asset('images/valores-img.jpeg') }}" alt="Valores" style="margin-bottom: 10px">
     </div>
 </section>
 
 {{-- Sessão de Sistemas e serviços --}}
 <section class="services_section">
-    <img src={{ asset('images/system_infortread_services.png') }} alt="Sistemas">
+    <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
     <h1 style="margin-bottom: 10px">Nossos Sistemas</h1>
 
     <div class="sistems_card">
@@ -132,12 +131,12 @@
     </div>
 
     <div class="services">
-        <img src={{ asset('images/services_icon.png') }} alt="Serviços">
+        <img src="{{ asset('images/services_icon.png') }} "alt="Serviços">
         <h1 style="margin-bottom: 15px">Nossos Serviços</h1>
 
         <div class="service_card">
             <div>
-                <img src={{ asset('images/developer_icon.png') }} alt="Desenvolvimento de Sistemas">
+                <img src="{{ asset('images/developer_icon.png') }}" alt="Desenvolvimento de Sistemas">
             </div>
             <div style="margin-left: 15px">
                 <h3 style="line-height:21px">Desenvolvimento de Sistemas</h3>
@@ -151,7 +150,7 @@
                 <p style="margin-top: -10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  Saiba mais</span></p>
             </div>
             <div>
-                <img src={{ asset('images/fiber_net.png') }} alt="Desenvolvimento de Sistemas">
+                <img src="{{ asset('images/fiber_net.png') }}" alt="Desenvolvimento de Sistemas">
             </div>
         </div>
     </div>
@@ -231,6 +230,7 @@
 
 {{-- Helpe Desk section --}}
 <section class="help_section">
+
     <section class="numbers">
         <div>
             <pre>+100</pre>
@@ -241,6 +241,39 @@
             <p>Sistemas Ativos em nuvens e desktop</p>
         </div>
     </section>
+
+    <section class="help_desk">
+        <h1 style="color: white; font-size:20px; margin-left: 18px; margin-top:18px">Helpe Desk Especializado</h1>
+        <div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ullamco laboris nis....  Saiba mais</p>
+            <button class="button_1" style="margin-left: 18px; margin-bottom: 18px">Pedir Suporte</button>
+            </div>
+            <div>
+                <img src="{{ asset('images/help_desk_img.png') }}" alt="Help Desk">
+            </div>
+        </div>
+    </section>
+
+</section>
+
+{{-- Depoimentos Section --}}
+<section class="depoimentos_section">
+    <div>
+        <h2>Depoimentos</h2>
+    </div>
+    <div class="arrows">
+        <img src="{{ asset('images/arrow_left.png') }}">
+        <img src="{{ asset('images/arrow_right.png') }}">
+    </div>
+    <div class="depoimento_carrossel">
+        <div class="depoimentos_photo">
+            <img src="{{ asset('images/avatar_depoiments.jpeg') }}" alt="Depoente">
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod  tempor incididunt ut labore et dolore. <span>Humberto Kraven Secretário de Estado</span>
+        </p>
+    </div>
 </section>
 
 <script>
