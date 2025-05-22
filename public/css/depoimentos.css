@@ -1,24 +1,44 @@
 .depoimentos_section{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    border: 1px red solid;
+    justify-content: center;
     width: 100%;
+    height: 277px;
+    overflow: hidden;
+}
+.depoimentos_section .title_depoimentos{
+    position: absolute;
+    top: 0;
 }
 .depoimentos_section h2{
     color: var(--black-1);
     font-size: 14px;
     margin-top: 30px;
 }
-
+.depoimentos_section .arrows{
+    z-index: 1000;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
 .depoimentos_section .depoimento_carrossel{
     position: absolute;
     display: flex;
-    flex-direction: column;
+    left: 0vw;
+    width: 400%;
     align-items: center;
     justify-content: center;
-    z-index: 0;
-    border: 3px green solid;
+    height: 150px;
+    transition: left 0.5s ease-in-out;
+}
+.depoimentos_section .depoimento_carrossel .move_carrossel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .depoimentos_section .depoimento_carrossel .depoimentos_photo{
     width: 75px;
@@ -35,6 +55,13 @@
 .depoimentos_section .depoimento_carrossel p{
     text-align: center;
     font-size: 10px;
-    width: 80%;
+    width: 250px;
 }
+.depoimentos_section .depoimento_carrossel .move_carrossel .cotes{
+    position: absolute;
+    width: 250px;
 
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+}

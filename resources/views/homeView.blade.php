@@ -259,21 +259,81 @@
 
 {{-- Depoimentos Section --}}
 <section class="depoimentos_section">
-    <div>
+    <div class="title_depoimentos">
         <h2>Depoimentos</h2>
     </div>
+
     <div class="arrows">
-        <img src="{{ asset('images/arrow_left.png') }}">
-        <img src="{{ asset('images/arrow_right.png') }}">
+        <img id="left_btn" src="{{ asset('images/arrow_left.png') }}" alt="Anterior">
+        <img id="right_btn" src="{{ asset('images/arrow_right.png') }}" alt="Próximo">
     </div>
+
     <div class="depoimento_carrossel">
-        <div class="depoimentos_photo">
-            <img src="{{ asset('images/avatar_depoiments.jpeg') }}" alt="Depoente">
+
+        <div class="move_carrossel">
+            <div class="cotes">
+                <img src="{{ asset('images/left_cote.png') }}">
+                <img src="{{ asset('images/right_cote.png') }}">
+            </div>
+            <div class="depoimentos_photo">
+                <img src="{{ asset('images/avatar_depoiments.jpeg') }}" alt="Depoente">
+            </div>
+            <p>Lorem ipsum dolor sit amet<br><span>Humberto Kraven</span></p>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod  tempor incididunt ut labore et dolore. <span>Humberto Kraven Secretário de Estado</span>
-        </p>
+
+        <div class="move_carrossel">
+            <div class="cotes">
+                <img src="{{ asset('images/left_cote.png') }}">
+                <img src="{{ asset('images/right_cote.png') }}">
+            </div>
+            <div class="depoimentos_photo">
+                <img src="{{ asset('images/avatar_fake.png') }}" alt="Depoente">
+            </div>
+            <p>Depoimento 2<br><span>Humberto Kraven</span></p>
+        </div>
+
+        <div class="move_carrossel">
+            <div class="cotes">
+                <img src="{{ asset('images/left_cote.png') }}">
+                <img src="{{ asset('images/right_cote.png') }}">
+            </div>
+            <div class="depoimentos_photo">
+                <img src="{{ asset('images/avatar_fake3.png') }}" alt="Depoente">
+            </div>
+            <p>Depoimento 3<br><span>Humberto Kraven</span></p>
+        </div>
+
+        <div class="move_carrossel">
+            <div class="cotes">
+                <img src="{{ asset('images/left_cote.png') }}">
+                <img src="{{ asset('images/right_cote.png') }}">
+            </div>
+            <div class="depoimentos_photo">
+                <img src="{{ asset('images/avatar_fake2.png') }}" alt="Depoente">
+            </div>
+            <p>Depoimento 4<br><span>Humberto Kraven</span></p>
+        </div>
+
     </div>
+</section>
+
+
+{{-- Formulário de Contato --}}
+<section class="formulario_section">
+    <h1 style="color: white; margin-top:23px">Pedido de Orçamento</h1>
+    <form action="">
+        <label for="nome">Nome / Empresa / Instiruição</label>
+        <input type="text">
+
+        <label for="email">E-mail</label>
+        <input type="email">
+
+        <label for="nome">Contato Whatsapp</label>
+        <input type="text">
+
+        <label for="nome">Mensagem</label>
+        <input type="text">
+    </form>
 </section>
 
 <script>
@@ -284,3 +344,43 @@
         window.location.href = url;
     }
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const carrossel = document.querySelector('.depoimento_carrossel');
+        const totalSlides = document.querySelectorAll('.move_carrossel').length;
+        let currentSlide = 0;
+
+        function updateSlide() {
+            const newLeft = -(currentSlide * 100);
+            carrossel.style.left = `${newLeft}vw`;
+        }
+
+        function moveLeft() {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = totalSlides - 1; // vai para o último slide se estiver no primeiro
+            }
+            updateSlide();
+        }
+
+        function moveRight() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+            } else {
+                currentSlide = 0; // volta pro primeiro
+            }
+            updateSlide();
+        }
+
+        // Eventos dos botões
+        document.getElementById('left_btn').addEventListener('click', moveLeft);
+        document.getElementById('right_btn').addEventListener('click', moveRight);
+
+        // Auto slide a cada 2 segundos
+        setInterval(moveRight, 5000);
+    });
+</script>
+
+
