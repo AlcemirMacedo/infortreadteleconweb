@@ -8,13 +8,18 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .formulario_section form{
-    width: 329px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    
+
+}
+.formulario_section input, textarea {
+    width: 100%;
 }

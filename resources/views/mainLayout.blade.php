@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/help.css') }}">
     <link rel="stylesheet" href="{{ asset('css/depoimentos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/formulario.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <title>Infortread Telecom</title>
 </head>
 <body>

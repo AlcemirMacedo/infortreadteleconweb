@@ -3,9 +3,23 @@
 @section('content')
 
 {{-- Banner e Menu --}}
+{{-- menu top --}}
+<div class="menu_top">
+    <ul>
+        <li>Início</li>
+        <li>Sobre a Infortread</li>
+        <li>Sistemas</li>
+        <li>Serviços</li>
+        <li>Contatos</li>
+    </ul>
+</div>
 <section class="banner">
     <div class="fade-bg">
         <header>
+
+
+
+            {{-- Menu Toggle --}}
             <div class="menu-toggle">
                 <div>
                     <div></div>
@@ -13,6 +27,8 @@
                     <div></div>
                 </div>
             </div>
+            {{-- Fim do menu Toggle --}}
+
             <div class="share">
                 <div>
                     <img src="{{ asset('images/share-bgt.png') }}" height="20" width="20" alt="Compartilhar">
@@ -320,21 +336,49 @@
 
 {{-- Formulário de Contato --}}
 <section class="formulario_section">
-    <h1 style="color: white; margin-top:23px">Pedido de Orçamento</h1>
+    <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
     <form action="">
         <label for="nome">Nome / Empresa / Instiruição</label>
-        <input type="text">
+        <input type="text" required>
 
         <label for="email">E-mail</label>
-        <input type="email">
+        <input type="email" required>
 
-        <label for="nome">Contato Whatsapp</label>
-        <input type="text">
+        <label for="contato">Contato Whatsapp</label>
+        <input type="tel" required>
 
-        <label for="nome">Mensagem</label>
-        <input type="text">
+        <label for="texto">Mensagem</label>
+        <textarea required name="texto" id="texto" rows="10" style="padding-top: 15px; word-wrap:break-word; overflow-wrap:break-word"></textarea>
+
+        <div style="display: flex; text-align: center; width:100%; justify-content:space-between">
+            <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
+            <button type="reset" class="button_1">Limpar</button>
+        </div>
     </form>
 </section>
+
+<footer>
+    <div>
+        <div>
+            <ul style="margin-top: 0; margin-left:18px">
+                <li>Inicio</li>
+                <li>Sobre a Infortread</li>
+                <li>Nossos Serviços</li>
+                <li>Onde Atuamos</li>
+                <li>Contatos</li>
+            </ul>
+        </div>
+        <div style="text-align: right; margin-right: 18px">
+            Rua Djalma Dutra, nº 44, N. Sra das Graças<br/>
+            (92) 3303-8200 | (92) 3016-7542<br/>
+            (92) 98189-8765 | (92) 99367-6238<br/>
+            contato@infortread.com.br | infortread@infortread.com.br<br/>
+            facebook.com/infortread<br/>
+            infortread.com.br<br/>
+        </div>
+    </div>
+    <div style="text-align: center; justify-content: center">Desenvolvido por Infortread Telecom</div>
+</footer>
 
 <script>
     function abrirWhatsapp(){

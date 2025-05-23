@@ -82,15 +82,35 @@ input, textarea, select{
     box-sizing: border-box;
 }
 
-input{
-    width: 329px;
-    height: 48px;
+input, textarea{
     background-color: var(--white);
     border-radius: 10px;
     margin-bottom: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+input{
+    height: 48px;
 }
 label{
     color: var(--white);
     font-size: 12px;
     margin-bottom: 8px;
+}
+
+footer{
+    background-color: var(--black-1);
+    color: var(--white);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    padding: 0;
+}
+li {
+    list-style: none;
 }
