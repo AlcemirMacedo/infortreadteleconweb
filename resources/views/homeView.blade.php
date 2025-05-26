@@ -5,21 +5,26 @@
 {{-- Banner e Menu --}}
 {{-- menu top --}}
 <div class="menu_top">
-    <ul>
-        <li>Início</li>
-        <li>Sobre a Infortread</li>
-        <li>Sistemas</li>
-        <li>Serviços</li>
-        <li>Contatos</li>
-    </ul>
+    <div class="logo" style="flex: 1">
+        <img src="{{ asset('img/logo.png') }}" alt="Infortread Telecom">
+    </div>
+    <div style="flex: 4">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">A Infortread</a></li>
+            <li><a href="#">Sistemas</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contatos</a></li>
+
+        </ul>
+    </div>
+    <div style="flex: 1">
+        ...
+    </div>
 </div>
 <section class="banner">
     <div class="fade-bg">
         <header>
-
-
-
-            {{-- Menu Toggle --}}
             <div class="menu-toggle">
                 <div>
                     <div></div>
@@ -38,7 +43,7 @@
         {{-- Logo e frase inicial --}}
         <div class="banner-content">
             <img src="{{ asset('images/logo-w.png') }}" alt="Infortread Telecom">
-            <h2>A melhor solução para sua empresa ou instituição</h2>
+            <h2>A melhor solução para sua <br/>empresa ou instituição</h2>
 
             {{-- Botão do CTA --}}
             <div class="area-cta">
