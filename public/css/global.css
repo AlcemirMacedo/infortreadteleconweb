@@ -37,11 +37,15 @@
     --gray-2: #616161;
     --white: #FFFFFF;
 }
+
 body{
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h1{
     font-family: 'Braah';
@@ -69,6 +73,14 @@ a{
 span{
     color: var(--blue-2);
 }
+html{
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 60px; /* mesma altura do menu fixo */
+}
+
 .button_1{
    width: 156px;
    height: 40px;
@@ -81,6 +93,26 @@ span{
    border: none;
 }
 
+.login, .cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    padding: 7px 30px;
+    margin-right: 15px;
+    color: var(--white);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.login:hover, .cadastrar:hover{
+    background-color: var(--white);
+    color: var(--blue-2);
+}
+html{
+    scroll-behavior: smooth;
+}
 
 input, textarea, select{
     all:unset;
@@ -93,6 +125,7 @@ input, textarea{
     margin-bottom: 22px;
     padding-left: 15px;
     padding-right: 15px;
+    border: 1px solid #ccc;
 }
 input{
     height: 48px;

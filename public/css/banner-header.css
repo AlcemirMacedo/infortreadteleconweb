@@ -4,7 +4,6 @@
 }
 
 .menu_top{
-    overflow: hidden;
     width: 100%;
     height: 60px;
     background-color: rgba(10, 122, 197, 0.7);
@@ -18,9 +17,21 @@
     align-items: center;
     justify-content: center;
 }
-.menu_top > div:nth-child(2){
-    justify-content: center;
+
+
+.menu_top > div:nth-child(1){
+    flex: 1;
 }
+
+.menu_top > nav:nth-child(2){
+    justify-content: center;
+    flex: 4;
+}
+.menu_top > div:nth-child(3){
+    justify-content: center;
+    flex: 1;
+}
+
 .menu_top .logo img{
     width: 110px;
     cursor: pointer;
@@ -65,13 +76,6 @@
     color: var(--blue-2);
 }
 
-/* .services_section .sistems_card h1::before{
-    content: url('../images/icon_title.png');
-    display: inline-block;
-    width: 13px;
-    height: auto;
-    margin-right: 9px;
-} */
 .menu_top ul li::before{
     content: url('../images/seta_menu.png');
     display: inline-block;
@@ -138,24 +142,33 @@
     text-transform: uppercase;
 }
 .share{
-    position:absolute;
-    top: 66px;
-    right: 15px;
-    height: 37px;
-    width: 37px;
+    position:fixed;
+    background-color: var(--black-1);
+    bottom: 15px;
+    z-index: 2000;
+    right: 10px;
+    height: 30px;
+    width: 30px;
     border-radius: 50px;
-    background-color: var(--gray-2);
-    display: none;
+    border: 1px solid var(--blue-2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.share:hover{
+    background-color: var(--blue-2);
+    border: 1px solid var(--white);
+}
+.share>div{
+    width: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.share>div{
-    width: 20px;
-    height: 24px;
-}
 .share>div img{
-    width: 20px;
-    height: 24px;
+    width: 100%
 }
 
 
@@ -184,7 +197,7 @@
 
 .fade-bg .area-cta .btn-cta:hover{
     background-color: var(--blue-2);
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 .fade-bg .area-cta .btn-cta p{
@@ -201,21 +214,84 @@
 
 
 
-
-
 /* /////////////////////////////////// */
 
 
 
-
-
 @media (max-width: 600px) {
+
+
     .menu_top{
-        display: none;
+        width: 70%;
+        height: auto;
+        background-color: rgba(10, 122, 197, 0.7);
+        position: fixed;
+        left: -70%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
     }
+    .menu_top.active{
+        left: 0%;
+    }
+
     .banner{
         height: 365px;
     }
+
+    .menu_top > div:nth-child(1){
+        display: none;
+    }
+
+    .menu_top > div:nth-child(3){
+        display: none;
+    }
+
+    .bots_fixed{
+        position: fixed;
+        z-index: 3000;
+        top: 10px;
+        right: 10px;
+    }
+
+
+    /* Menu Mobile */
+    .menu_top ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu_top ul li{
+        color: var(--white);
+        padding: 0;
+        width: 100%;
+        position: relative;
+        padding: 20px;
+        display: flex;
+        border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+        transition: all 0.5s ease-in-out;
+        font-size: 14px;
+        flex: 1;
+    }
+    .menu_top ul li a:link{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu_top ul li::before{
+        content: none
+    }
+
+
+
+
+
 
     /* menu toggle */
     .menu-toggle{
@@ -245,24 +321,21 @@
     }
     .share{
         position:absolute;
+        width: 37px;
+        height: 37px;
         top: 66px;
         right: 15px;
-        height: 37px;
-        width: 37px;
-        border-radius: 50px;
+        border: none;
         background-color: var(--gray-2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+    .share:hover{
+        background-color: var(--gray-2);
+        border: none;
     }
     .share>div{
         width: 20px;
-        height: 24px;
     }
-    .share>div img{
-        height: 24px;
-        width: 20px;
-    }
+
 
     /* logo e texto principal */
 

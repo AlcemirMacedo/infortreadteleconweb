@@ -1,3 +1,4 @@
+
 .services_section{
     margin-left: 18px;
     margin-right: 18px;
@@ -5,6 +6,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 85%;
+}
+.services_section>h1{
+    margin-bottom: 50px;
+}
+.services_section .cards_area{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
 }
 
 .services_section img{
@@ -19,12 +29,11 @@
     height: auto;
     border: 1px var(--blue-2) dashed;
     border-radius: 10px;
-    margin-bottom: 25px;
 }
 
 .services_section .sistems_card h1{
     width: 90%;
-    margin: 10px 10px 0 10px;
+    margin: 10px;
 }
 .services_section .sistems_card h1::before{
     content: url('../images/icon_title.png');
@@ -35,7 +44,7 @@
 }
 .services_section .sistems_card p{
     font-family: 'Comfortaa';
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
     font-weight: lighter;
@@ -44,7 +53,7 @@
 }
 .services_section .sistems_card button{
     font-family: 'Comfortaa';
-    font-size: 12px;
+    font-size: 14px;
     color: var(--white);
     width: 134px;
     height: 39px;
@@ -121,3 +130,140 @@
     flex-direction: column;
     flex: 1;
 }
+
+
+@media (max-width: 601px){
+    .services_section{
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .services_section>h1{
+        margin-bottom: 30px;
+    }
+
+    .services_section img{
+        width: 100px;
+    }
+    .services_section .cards_area{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_section .sistems_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        border: 1px var(--blue-2) dashed;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+
+    .services_section .sistems_card h1{
+        width: 90%;
+        margin: 10px;
+    }
+    .services_section .sistems_card h1::before{
+        content: url('../images/icon_title.png');
+        display: inline-block;
+        width: 13px;
+        height: auto;
+        margin-right: 9px;
+    }
+    .services_section .sistems_card p{
+        font-family: 'Comfortaa';
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: lighter;
+        color: var(--gray-2);
+        text-align: center;
+    }
+    .services_section .sistems_card button{
+        font-family: 'Comfortaa';
+        font-size: 12px;
+        color: var(--white);
+        width: 134px;
+        height: 39px;
+        /* margin: 18px; */
+        border-radius: 20px;
+        border: none;
+        padding: 0;
+        background: linear-gradient(to right, #E36600, #E32200);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .services_section .services{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .services_section .services .service_card{
+        display: flex;
+        align-items: flex-end;
+    }
+    .services_section .services .service_card p{
+        font-size: 10px;
+    }
+
+    /* Help Section */
+    .help_section .numbers{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .help_section .numbers div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .help_section .numbers pre{
+        font-family: 'Braah';
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .help_section .numbers div p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .help_section .help_desk{
+        background-color: var(--blue-2);
+        color: white;
+    }
+    .help_section .help_desk p{
+        font-size: 12px;
+        font-weight: lighter;
+        margin-left: 18px;
+    }
+    .help_section .help_desk img{
+        width: 185px;
+    }
+    .help_section .help_desk>div{
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+    }
+    .help_section .help_desk>div div{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+}
+
