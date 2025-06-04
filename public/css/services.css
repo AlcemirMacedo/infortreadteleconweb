@@ -51,19 +51,6 @@
     color: var(--gray-2);
     text-align: center;
 }
-.services_section .sistems_card button{
-    font-family: 'Comfortaa';
-    font-size: 14px;
-    color: var(--white);
-    width: 134px;
-    height: 39px;
-    margin: 18px;
-    border-radius: 20px;
-    border: none;
-    padding: 0;
-    background: linear-gradient(to right, #E36600, #E32200);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
 
 .services_section .services{
     margin-top: 20px;

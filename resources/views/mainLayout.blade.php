@@ -17,12 +17,15 @@
     <title>Infortread Telecom</title>
 </head>
 <body>
-    <header>
 
-    </header>
 
     @yield('content')
 
-
+{{-- Mostrar Menu --}}
+<script>
+    function mostramenu(){
+        document.querySelector(".menu_top").classList.toggle("active");
+    }
+</script>
 </body>
 </html>

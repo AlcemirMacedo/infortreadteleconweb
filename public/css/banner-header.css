@@ -283,7 +283,6 @@
         justify-content: center;
         text-align: center;
     }
-
     .menu_top ul li::before{
         content: none
     }
@@ -301,8 +300,9 @@
         right: 15px;
         height: 37px;
         width: 37px;
-        border-radius: 50px;
-        background-color: var(--gray-2);
+        border-radius: 7px;
+        border: 1px solid var(--gray-1);
+        background-color: var(--blue-2);
         flex-direction: column;
         align-items: center;
         justify-content: space-around;

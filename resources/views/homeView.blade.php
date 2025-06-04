@@ -8,15 +8,15 @@
 
 <div class="menu_top">
     <div class="logo">
-        <a href="#home"><img src="{{ asset('img/logo.png') }}" alt="Infortread Telecom"></a>
+        <a href="/#home"><img src="{{ asset('img/logo.png') }}" alt="Infortread Telecom"></a>
     </div>
     <nav>
         <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">A Infortread</a></li>
-            <li><a href="#sistemas">Sistemas</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contato">Contatos</a></li>
+            <li><a href="/#home">Início</a></li>
+            <li><a href="/#sobre">A Infortread</a></li>
+            <li><a href="/#sistemas">Sistemas</a></li>
+            <li><a href="/#services">Serviços</a></li>
+            <li><a href="/#contato">Contatos</a></li>
         </ul>
     </nav>
     <div style="justify-content:center">
@@ -32,6 +32,7 @@
 
 
 <section id="home" class="banner">
+
     <div class="fade-bg">
         <header class="bots_fixed">
             <div class="menu-toggle" onclick="mostramenu()">
@@ -52,6 +53,11 @@
         </header>
         {{-- Logo e frase inicial --}}
         <div class="banner-content">
+            @if(session('success'))
+                <div class="successMsg" style="position: fixed; bottom: 15px; z-index:5000; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 20px;">
+                    {{ session('success') }}
+                </div>
+            @endif
             <img src="{{ asset('images/logo-w.png') }}" alt="Infortread Telecom">
             <h2>A melhor solução para sua <br/>empresa ou instituição</h2>
 
@@ -71,6 +77,7 @@
 
     <div class="about_p1">
         <div style="flex:1">
+
             <h1 style="margin-top: 20px; margin-bottom:15px">Sobre a Infortread</h1>
             <p>
                 Fundada em 2009, a Infortread atua no setor de tecnologia da informação, com especialização no desenvolvimento de sistemas e na distribuição de internet, tendo como principal foco os municípios do Estado do Amazonas.
@@ -366,6 +373,7 @@
 {{-- Formulário de Contato --}}
 <section id="contato" class="formulario_section">
     <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
+
     <form action="{{ route('contato.enviar') }}" method="POST">
         @csrf
         <label for="nome">Nome / Empresa / Instituição</label>
@@ -410,6 +418,8 @@
     <div style="text-align: center; justify-content: center">Desenvolvido por Infortread Telecom</div>
 </footer>
 
+
+{{-- Script do Contato de Whatsapp --}}
 <script>
     function abrirWhatsapp(){
         const mensagem = encodeURIComponent("Gostaria de falar com um atendente");
@@ -419,7 +429,7 @@
     }
 </script>
 
-
+{{-- Script do smooth screen --}}
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -437,7 +447,7 @@
     });
 </script>
 
-
+{{-- Script do carrossel --}}
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const carrossel = document.querySelector('.depoimento_carrossel');
@@ -497,6 +507,16 @@
             alert("Seu navegador não suporta o compartilhamento.");
         }
     }
+</script>
+
+{{-- Script da confirmação de mensagem --}}
+<script>
+    setTimeout(function(){
+        var successMsg = document.querySelector('.successMsg');
+        if(successMsg){
+            successMsg.style.display = 'none';
+        }
+    }, 3000);
 </script>
 
 

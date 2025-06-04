@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContatoMail;
+use App\Mail\ContatoRespostaMail;
 
 class ContatoController extends Controller // Corrigido!
 {
@@ -17,8 +18,12 @@ class ContatoController extends Controller // Corrigido!
             'mensagem' => 'required|string',
         ]);
 
+        // Envia email para o Administrador do site
         Mail::to('alcemirmacedo@gmail.com')->send(new ContatoMail($dados));
 
-        return back()->with('success', 'E-mail enviado com sucesso!');
+        // Envia um e-mail automático de resposta para quem enviou o formulário
+        Mail::to($dados['email'])->send(new ContatoRespostaMail($dados));
+
+        return redirect()->back()->with('success', 'E-mail enviado com sucesso!');
     }
 }

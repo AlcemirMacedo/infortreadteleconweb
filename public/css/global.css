@@ -93,6 +93,24 @@ html{
    border: none;
 }
 
+button{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    color: var(--white);
+    width: 134px;
+    height: 39px;
+    margin: 18px;
+    border-radius: 20px;
+    border: none;
+    padding: 0;
+    background-color: var(--orange-1);
+    transition: all 0.15s ease-in-out;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    background-color: var(--blue-2);
+}
+
 .login, .cadastrar{
     display: flex;
     align-items: center;
