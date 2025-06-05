@@ -18,7 +18,6 @@
 </head>
 <body>
 
-
     @yield('content')
 
 {{-- Mostrar Menu --}}

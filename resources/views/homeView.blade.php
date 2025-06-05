@@ -140,7 +140,7 @@
 {{-- Sessão de Sistemas e serviços --}}
 <section id="sistemas" class="services_section">
     <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
-    <h1>Nossos Sistemas</h1>
+    <h1 class="title_main">Nossos Sistemas</h1>
 
     <div class="cards_area">
         <div class="sistems_card">
@@ -183,30 +183,35 @@
 
     <div id="services" class="services">
         <img src="{{ asset('images/services_icon.png') }} "alt="Serviços">
-        <h1 style="margin-bottom: 15px">Nossos Serviços</h1>
+        <h1 class="title_main">Nossos Serviços</h1>
 
-        <div class="service_card">
-            <div>
-                <img src="{{ asset('images/developer_icon.png') }}" alt="Desenvolvimento de Sistemas">
+        <div class="service_card_area">
+            <div class="service_card">
+                <div>
+                    <img src="{{ asset('images/developer_icon.png') }}" alt="Desenvolvimento de Sistemas">
+                </div>
+                <div>
+                    <h3>Desenvolvimento de Sisemas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  <a href="#">Saiba mais</a></span></p>
+                </div>
             </div>
-            <div style="margin-left: 15px">
-                <h3 style="line-height:21px">Desenvolvimento de Sistemas</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  Saiba mais</span></p>
-            </div>
-        </div>
 
-        <div class="service_card">
-            <div style="text-align: right; margin-right: 15px">
-                <h3 style="line-height:21px">Internet Fibra Óptica</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  Saiba mais</span></p>
-            </div>
-            <div>
-                <img src="{{ asset('images/fiber_net.png') }}" alt="Desenvolvimento de Sistemas">
+            <div class="service_card second_card">
+                <div>
+                    <img src="{{ asset('images/fiber_net.png') }}" alt="Desenvolvimento de Sistemas">
+                </div>
+                <div>
+                    <h3>Internet Fibra Óptica</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  <a href="#">Saiba mais</a></span></p>
+                </div>
+
             </div>
         </div>
     </div>
 
 </section>
+
+
 
 {{-- Sessão de Locais de Atuação --}}
 <section class="locais_section">
@@ -256,10 +261,10 @@
             </div>
         </div>
 
-        <div class="container locais_list">
+        <div class="locais_list">
             <h3>Outras Localidades onde a Infortread atua:</h3>
             <ul>
-                <div style="display: flex; flex-wraP: wrap; font-size:9px; text-align: left">
+                <div>
                     <li>Boa do Acre</li>
                     <li>Anamã</li>
                     <li>Tefé</li>
@@ -280,34 +285,39 @@
 
 </section>
 
+
+
 {{-- Helpe Desk section --}}
 <section class="help_section">
 
     <section class="numbers">
         <div>
-            <pre>+100</pre>
-            <p>Clientes em todo estado do Amazonas</p>
+            <pre data-target="250">+0</pre>
+            <p>Usuários de Sistemas em prefeituras</p>
         </div>
         <div>
-            <pre>+250</pre>
-            <p>Sistemas Ativos em nuvens e desktop</p>
+            <pre data-target="450">+0</pre>
+            <p>Clientes de internet banda larga ativos</p>
         </div>
     </section>
 
     <section class="help_desk">
-        <h1 style="color: white; font-size:20px; margin-left: 18px; margin-top:18px">Helpe Desk Especializado</h1>
-        <div>
+        <h1>Helpe Desk Especializado</h1>
+
+        <div class="help_content">
             <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ullamco laboris nis.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ullamco laboris nis....  Saiba mais</p>
-            <button class="button_1" style="margin-left: 18px; margin-bottom: 18px">Pedir Suporte</button>
+                <button class="button_1">Pedir Suporte</button>
             </div>
-            <div>
+            <div class="help_img">
                 <img src="{{ asset('images/help_desk_img.png') }}" alt="Help Desk">
             </div>
         </div>
     </section>
 
 </section>
+
 
 {{-- Depoimentos Section --}}
 <section class="depoimentos_section">
@@ -372,27 +382,36 @@
 
 {{-- Formulário de Contato --}}
 <section id="contato" class="formulario_section">
-    <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
 
-    <form action="{{ route('contato.enviar') }}" method="POST">
-        @csrf
-        <label for="nome">Nome / Empresa / Instituição</label>
-        <input name="nome" type="text" required>
 
-        <label for="email">E-mail</label>
-        <input name="email" type="email" required>
+        <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
 
-        <label for="contato">Contato Whatsapp</label>
-        <input name="contato" type="tel" required>
+    <div>
+        <form action="{{ route('contato.enviar') }}" method="POST">
+            @csrf
+            <label for="nome">Nome / Empresa / Instituição</label>
+            <input name="nome" type="text" required>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" required name="texto" id="mensagem" rows="10" style="padding-top: 15px; word-wrap:break-word; overflow-wrap:break-word"></textarea>
+            <label for="email">E-mail</label>
+            <input name="email" type="email" required>
 
-        <div style="display: flex; text-align: center; width:100%; justify-content:space-between">
-            <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
-            <button type="reset" class="button_1">Limpar</button>
+            <label for="contato">Contato Whatsapp</label>
+            <input name="contato" type="tel" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" required name="texto" id="mensagem" rows="10" style="padding-top: 15px; word-wrap:break-word; overflow-wrap:break-word"></textarea>
+
+            <div style="display: flex; text-align: center; width:100%; justify-content:space-between">
+                <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
+                <button type="reset" class="button_1">Limpar</button>
+            </div>
+        </form>
+        <div class="form_logo">
+            <img src="{{ asset('img/logo.png') }}" alt="">
         </div>
-    </form>
+    </div>
+
+
 </section>
 
 <footer>
@@ -517,6 +536,45 @@
             successMsg.style.display = 'none';
         }
     }, 3000);
+</script>
+
+{{-- Anima números --}}
+<script>
+    function animarNumero(preElement) {
+        if (preElement.dataset.animado === "true") return;
+        preElement.dataset.animado = "true";
+        const target = +preElement.getAttribute('data-target');
+        let valorAtual = 0;
+        const duracao = 2500; // 1.5 segundos
+        const incremento = Math.ceil(target / (duracao / 40)); // passo baseado no tempo
+
+        function atualizar() {
+            valorAtual += incremento;
+            if (valorAtual >= target) {
+            preElement.textContent = `+${target}`;
+            } else {
+            preElement.textContent = `+${valorAtual}`;
+            requestAnimationFrame(atualizar);
+        }
+    }
+
+    preElement.textContent = '+0';
+    atualizar();
+    }
+
+    // Observer para animar sempre que a seção estiver visível
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        const numeros = entry.target.querySelectorAll('pre[data-target]');
+        numeros.forEach(animarNumero);
+        }
+    });
+    }, { threshold: 0.5 });
+
+    const numbersSection = document.querySelector('.numbers');
+    observer.observe(numbersSection);
+
 </script>
 
 

@@ -1,14 +1,141 @@
+
+/* Help Section */
+
 .help_section{
     width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 .help_section .numbers{
-    background-color: black;
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 300px;
+    display: flex;
     color: white;
+}
+.help_section .numbers div{
+    flex: 1;
+}
+.help_section .numbers pre{
+    font-size: 50px;
+    font-family: 'Braah';
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.help_section .numbers div p{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 
+/* help desk */
+.help_section .help_desk{
+    background-color: var(--blue-2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.help_section .help_desk h1{
+    color: white;
+    font-size:30px;
+    margin-top:18px;
+    margin-bottom: 30px;
+    width: 85%;
+    text-align: left;
+}
+.help_section .help_desk .help_content{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+}
+.help_section .help_desk .help_content div{
+    flex: 1;
+    height: 100%;
+}
+.help_section .help_desk .help_content .help_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.help_section .help_desk p{
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+.help_section .help_desk img{
+    width: 300px;
+}
+.help_section .help_desk .button_1{
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+
+@media (max-width: 601px){
+
+
+    /* Help Section */
+    .help_section{
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .help_section .numbers{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .help_section .numbers pre{
+        font-size: 40px;
+    }
+    .help_section .numbers div p{
+        font-size: 20px;
+    }
+    .help_section .help_desk .help_content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .help_section .help_desk .help_content div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .help_section .help_desk h1{
+        color: white;
+        font-size:20px;
+        margin-top:18px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .help_section .help_desk p{
+        font-size: 12px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .help_section .help_desk img{
+        width: 185px;
+        margin-bottom: 20px;
+    }
+    .help_section .help_desk .button_1{
+        margin-bottom: 30px;
+    }
+
+}

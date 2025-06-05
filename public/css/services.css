@@ -2,14 +2,17 @@
 .services_section{
     margin-left: 18px;
     margin-right: 18px;
-    margin-top: 44px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
 }
-.services_section>h1{
+.services_section .title_main{
     margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: var(--orange-1);
 }
 .services_section .cards_area{
     display: grid;
@@ -18,7 +21,7 @@
 }
 
 .services_section img{
-    width: 100px;
+    width: 200px;
 }
 
 .services_section .sistems_card{
@@ -27,13 +30,21 @@
     align-items: center;
     width: 100%;
     height: auto;
+    color: var(--gray-2);
     border: 1px var(--blue-2) dashed;
     border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.services_section .sistems_card:hover{
+    background-color: var(--blue-2);
+    color: var(--white);
 }
 
 .services_section .sistems_card h1{
     width: 90%;
     margin: 10px;
+    color: var(--orange-1);
 }
 .services_section .sistems_card h1::before{
     content: url('../images/icon_title.png');
@@ -41,6 +52,7 @@
     width: 13px;
     height: auto;
     margin-right: 9px;
+    margin-top: 20px;
 }
 .services_section .sistems_card p{
     font-family: 'Comfortaa';
@@ -48,74 +60,46 @@
     margin-left: 10px;
     margin-right: 10px;
     font-weight: lighter;
-    color: var(--gray-2);
     text-align: center;
+}
+.services_section .sistems_card button{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    color: var(--white);
+    width: 134px;
+    height: 39px;
+    margin: 18px;
+    border-radius: 20px;
+    border: none;
+    padding: 0;
+    background: linear-gradient(to right, #E36600, #E32200);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .services_section .services{
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+.services_section .services .service_card_area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
 .services_section .services .service_card{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_section .services .service_card img{
+    margin-bottom: 30px;
 }
 .services_section .services .service_card p{
-    font-size: 10px;
-}
-
-/* Help Section */
-.help_section .numbers{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-.help_section .numbers div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.help_section .numbers pre{
-    font-family: 'Braah';
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 30px;
-}
-.help_section .numbers div p{
     font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 40px;
-}
-
-.help_section .help_desk{
-    background-color: var(--blue-2);
-    color: white;
-}
-.help_section .help_desk p{
-    font-size: 12px;
-    font-weight: lighter;
-    margin-left: 18px;
-}
-.help_section .help_desk img{
-    width: 185px;
-}
-.help_section .help_desk>div{
-    display: flex;
-    flex: 1;
-    align-items: flex-end;
-}
-.help_section .help_desk>div div{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 
@@ -136,9 +120,20 @@
     .services_section img{
         width: 100px;
     }
+
+    .services_section .services div{
+        margin-bottom: 15px;
+    }
     .services_section .cards_area{
         display: flex;
         flex-direction: column;
+    }
+    .services_section .services .service_card_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .services_section .services .service_card h3{
+        font-size: 20px;
     }
 
     .services_section .sistems_card{
@@ -149,9 +144,12 @@
         height: auto;
         border: 1px var(--blue-2) dashed;
         border-radius: 10px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
-
+    .services_section .sistems_card:hover{
+        background-color: var(--blue-2);
+        color: var(--white);
+    }
     .services_section .sistems_card h1{
         width: 90%;
         margin: 10px;
@@ -162,6 +160,7 @@
         width: 13px;
         height: auto;
         margin-right: 9px;
+        margin-top: 15px;
     }
     .services_section .sistems_card p{
         font-family: 'Comfortaa';
@@ -169,9 +168,9 @@
         margin-left: 10px;
         margin-right: 10px;
         font-weight: lighter;
-        color: var(--gray-2);
         text-align: center;
     }
+
     .services_section .sistems_card button{
         font-family: 'Comfortaa';
         font-size: 12px;
@@ -196,60 +195,16 @@
     }
     .services_section .services .service_card{
         display: flex;
+        flex-direction: row;
         align-items: flex-end;
+    }
+
+    .services_section .services .second_card{
+        margin-left: 15px;
+        flex-direction: row-reverse;
     }
     .services_section .services .service_card p{
         font-size: 10px;
-    }
-
-    /* Help Section */
-    .help_section .numbers{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .help_section .numbers div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .help_section .numbers pre{
-        font-family: 'Braah';
-        font-size: 30px;
-        margin-bottom: 0;
-        margin-top: 30px;
-    }
-    .help_section .numbers div p{
-        font-size: 14px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
-
-    .help_section .help_desk{
-        background-color: var(--blue-2);
-        color: white;
-    }
-    .help_section .help_desk p{
-        font-size: 12px;
-        font-weight: lighter;
-        margin-left: 18px;
-    }
-    .help_section .help_desk img{
-        width: 185px;
-    }
-    .help_section .help_desk>div{
-        display: flex;
-        flex: 1;
-        align-items: flex-end;
-    }
-    .help_section .help_desk>div div{
-        display: flex;
-        flex-direction: column;
-        flex: 1;
     }
 
 }
