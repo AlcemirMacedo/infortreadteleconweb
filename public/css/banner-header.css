@@ -182,7 +182,6 @@
     width: 230px;
     height: 68px;
     font-size: 16px;
-    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,7 +191,7 @@
 
 .fade-bg .area-cta .btn-cta:hover{
     background-color: var(--blue-2);
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 .fade-bg .area-cta .btn-cta p{

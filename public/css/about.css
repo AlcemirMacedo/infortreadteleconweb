@@ -16,23 +16,38 @@
 }
 
 .about_section .paralax{
-    background-image: url('../images/fachada-de-empresa.jpg');
-    background-attachment: fixed;
+    background-image: url('../images/paralax_infortread.png');
     background-size: cover;
+    filter: grayscale(100%) brightness(80%);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 10px;
     margin-top:50px;
     margin-bottom: 30px;
     flex: 1;
-    height: 230px;
+    height: 350px;
     width: 100%;
+    transition: filter 0.5s ease;
+}
+.about_section .paralax:hover{
+    filter: none;
 }
 
 .mvv{
     padding: 15px;
     margin: 15px;
     position: relative;
+}
+
+
+.mvv p{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.mvv p.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* Missão, Visão e Valores */
@@ -127,6 +142,59 @@
         bottom: -4px;
     }
 
+
+    /* Animação dos circs */
+    @keyframes moveCirc1 {
+        0%, 100% {
+            left: -4px;
+            top: 0;
+        }
+
+        25%{
+            left: -4px;
+            top: 99%;
+        }
+        50% {
+            top: 99%;
+            left: 100%;
+        }
+        75% {
+            top: 99%;
+            left: -4px;
+        }
+    }
+
+    @keyframes moveCirc2 {
+        0%, 100% {
+            right: -4px;
+            bottom: -4px;
+        }
+        25%{
+            right: 99%;
+            bottom: -4px;
+        }
+        50% {
+            right: 99%;
+            bottom: 99%;
+        }
+        75% {
+            right: 99%;
+            bottom: -4px;
+        }
+    }
+
+    .mvv_container .circ1 {
+        animation: moveCirc1 4s infinite ease-in-out;
+    }
+
+    .mvv_container .circ2 {
+        animation: moveCirc2 4s infinite ease-in-out;
+    }
+
+    /* fim da animação circ */
+
+
+
     .about_section p{
         font-size: 12px;
         font-weight: lighter;
@@ -139,7 +207,6 @@
     }
 
     .about_section .about_p1 .paralax{
-        background-image: url('../images/fachada-de-empresa.jpg');
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;

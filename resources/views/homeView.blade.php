@@ -76,8 +76,8 @@
 <section id="sobre" class="about_section">
 
     <div class="about_p1">
-        <div style="flex:1">
 
+        <div style="flex:1">
             <h1 style="margin-top: 20px; margin-bottom:15px">Sobre a Infortread</h1>
             <p>
                 Fundada em 2009, a Infortread atua no setor de tecnologia da informação, com especialização no desenvolvimento de sistemas e na distribuição de internet, tendo como principal foco os municípios do Estado do Amazonas.
@@ -87,17 +87,19 @@
             <p>
                 Sua infraestrutura é moderna e bem organizada, localizada na cidade de Manaus, onde são armazenados e processados todos os serviços oferecidos. A empresa conta com uma equipe comprometida, que trabalha diariamente para entregar um serviço de alta qualidade.
             </p>
+            <p>
+                A Infortread também oferece capacitação completa para a utilização de seus sistemas, além de suporte técnico eficiente para todos os serviços fornecidos. Seu objetivo é oferecer soluções rápidas e eficazes para os desafios enfrentados pelos clientes.
+            </p>
         </div>
         <div class="paralax">
         </div>
+
     </div>
 
 
 
     <div class="img_float">
-        <p>
-            A Infortread também oferece capacitação completa para a utilização de seus sistemas, além de suporte técnico eficiente para todos os serviços fornecidos. Seu objetivo é oferecer soluções rápidas e eficazes para os desafios enfrentados pelos clientes.
-        </p>
+
         {{-- <figure>
             <img src="{{ asset('images/data-center.png') }}" alt="Data Center">
             <figcaption>Datacenter Infortread - Manaus-AM</figcaption>
@@ -144,8 +146,9 @@
 
     <div class="cards_area">
         <div class="sistems_card">
-            <h1>E-notas</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <h1>STFolha</h1>
+            <h4>Folha de Pagamento para o Setor Público</h4>
+            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras fundos públicos.</p>
             <button>Contratar</button>
         </div>
 
@@ -261,7 +264,7 @@
             </div>
         </div>
 
-        <div class="locais_list">
+        <div class="locais_list" style="height: 100%">
             <h3>Outras Localidades onde a Infortread atua:</h3>
             <ul>
                 <div>
@@ -296,7 +299,7 @@
             <p>Usuários de Sistemas em prefeituras</p>
         </div>
         <div>
-            <pre data-target="450">+0</pre>
+            <pre data-target="800">+0</pre>
             <p>Clientes de internet banda larga ativos</p>
         </div>
     </section>
@@ -576,6 +579,35 @@
     observer.observe(numbersSection);
 
 </script>
+
+{{-- Script para animação do mvv e cards --}}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Seleciona os dois tipos de elementos
+        const mvvParagraphs = document.querySelectorAll('.mvv p');
+        const systemCards = document.querySelectorAll('.sistems_card');
+
+        const observerOptions = {
+            threshold: 0.2 // tanto para parágrafos quanto para os cards
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observa todos os elementos desejados
+        mvvParagraphs.forEach(el => observer.observe(el));
+        systemCards.forEach(el => observer.observe(el));
+    });
+</script>
+
+
 
 
 @endsection

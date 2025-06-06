@@ -73,9 +73,9 @@ a{
 span{
     color: var(--blue-2);
 }
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 
 [id] {
     scroll-margin-top: 60px; /* mesma altura do menu fixo */
