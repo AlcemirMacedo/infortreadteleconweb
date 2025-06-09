@@ -4,8 +4,6 @@
 
 {{-- Banner e Menu --}}
 {{-- menu top --}}
-
-
 <div class="menu_top">
     <div class="logo">
         <a href="/#home"><img src="{{ asset('img/logo.png') }}" alt="Infortread Telecom"></a>
@@ -29,7 +27,6 @@
     </div>
 
 </div>
-
 
 <section id="home" class="banner">
 
@@ -138,7 +135,6 @@
 
 </section>
 
-
 {{-- Sessão de Sistemas e serviços --}}
 <section id="sistemas" class="services_section">
     <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
@@ -148,24 +144,27 @@
         <div class="sistems_card">
             <h1>STFolha</h1>
             <h4>Folha de Pagamento para o Setor Público</h4>
-            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras fundos públicos.</p>
+            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
             <button>Contratar</button>
         </div>
 
         <div class="sistems_card">
-            <h1>E-social</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <h1>iContracheque Online</h1>
+            <h4>Consulta Online de Contracheques</h4>
+            <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
             <button>Contratar</button>
         </div>
 
         <div class="sistems_card">
-            <h1>E-contas</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <h1>SAM - Sistema de Arrecadação Municipal</h1>
+            <h4>Gestão Tributária e Emissão de DUAMs</h4>
+            <p>Solução completa para arrecadação de tributos municipais, como alvarás, construção, notas avulsas, IPTU, ITBI e água. Permite a geração de DUAMs com pagamento via Pix, oferecendo agilidade tanto para o contribuinte quanto para a gestão pública.</p>
             <button>Contratar</button>
         </div>
 
         <div class="sistems_card">
-            <h1>Contra-cheque Online</h1>
+            <h1>iE-Notas</h1>
+            <h4>Emissão de Notas Fiscais Eletrônicas</h4>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
             <button>Contratar</button>
         </div>
@@ -213,8 +212,6 @@
     </div>
 
 </section>
-
-
 
 {{-- Sessão de Locais de Atuação --}}
 <section class="locais_section">
@@ -288,8 +285,6 @@
 
 </section>
 
-
-
 {{-- Helpe Desk section --}}
 <section class="help_section">
 
@@ -321,7 +316,6 @@
 
 </section>
 
-
 {{-- Depoimentos Section --}}
 <section class="depoimentos_section">
     <div class="title_depoimentos">
@@ -333,61 +327,64 @@
         <img id="right_btn" src="{{ asset('images/arrow_right.png') }}" alt="Próximo">
     </div>
 
-    <div class="depoimento_carrossel">
+    <div class="carrossel_container">
+        <div class="depoimento_carrossel">
+            <!-- Slide 1 -->
+            <div class="move_carrossel">
+                <div class="cotes">
+                    <img src="{{ asset('images/left_cote.png') }}">
+                    <img src="{{ asset('images/right_cote.png') }}">
+                </div>
+                <div class="depoimentos_photo">
+                    <img src="{{ asset('images/avatar_depoiments.jpeg') }}" alt="Depoente">
+                </div>
+                <p>Lorem ipsum dolor sit amet<br><span>Humberto Kraven</span></p>
+            </div>
 
-        <div class="move_carrossel">
-            <div class="cotes">
-                <img src="{{ asset('images/left_cote.png') }}">
-                <img src="{{ asset('images/right_cote.png') }}">
+            <!-- Slide 2 -->
+            <div class="move_carrossel">
+                <div class="cotes">
+                    <img src="{{ asset('images/left_cote.png') }}">
+                    <img src="{{ asset('images/right_cote.png') }}">
+                </div>
+                <div class="depoimentos_photo">
+                    <img src="{{ asset('images/avatar_fake.png') }}" alt="Depoente">
+                </div>
+                <p>Depoimento 2<br><span>Humberto Kraven</span></p>
             </div>
-            <div class="depoimentos_photo">
-                <img src="{{ asset('images/avatar_depoiments.jpeg') }}" alt="Depoente">
+
+            <!-- Slide 3 -->
+            <div class="move_carrossel">
+                <div class="cotes">
+                    <img src="{{ asset('images/left_cote.png') }}">
+                    <img src="{{ asset('images/right_cote.png') }}">
+                </div>
+                <div class="depoimentos_photo">
+                    <img src="{{ asset('images/avatar_fake3.png') }}" alt="Depoente">
+                </div>
+                <p>Depoimento 3<br><span>Humberto Kraven</span></p>
             </div>
-            <p>Lorem ipsum dolor sit amet<br><span>Humberto Kraven</span></p>
+
+            <!-- Slide 4 -->
+            <div class="move_carrossel">
+                <div class="cotes">
+                    <img src="{{ asset('images/left_cote.png') }}">
+                    <img src="{{ asset('images/right_cote.png') }}">
+                </div>
+                <div class="depoimentos_photo">
+                    <img src="{{ asset('images/avatar_fake2.png') }}" alt="Depoente">
+                </div>
+                <p>Depoimento 4<br><span>Humberto Kraven</span></p>
+            </div>
         </div>
-
-        <div class="move_carrossel">
-            <div class="cotes">
-                <img src="{{ asset('images/left_cote.png') }}">
-                <img src="{{ asset('images/right_cote.png') }}">
-            </div>
-            <div class="depoimentos_photo">
-                <img src="{{ asset('images/avatar_fake.png') }}" alt="Depoente">
-            </div>
-            <p>Depoimento 2<br><span>Humberto Kraven</span></p>
-        </div>
-
-        <div class="move_carrossel">
-            <div class="cotes">
-                <img src="{{ asset('images/left_cote.png') }}">
-                <img src="{{ asset('images/right_cote.png') }}">
-            </div>
-            <div class="depoimentos_photo">
-                <img src="{{ asset('images/avatar_fake3.png') }}" alt="Depoente">
-            </div>
-            <p>Depoimento 3<br><span>Humberto Kraven</span></p>
-        </div>
-
-        <div class="move_carrossel">
-            <div class="cotes">
-                <img src="{{ asset('images/left_cote.png') }}">
-                <img src="{{ asset('images/right_cote.png') }}">
-            </div>
-            <div class="depoimentos_photo">
-                <img src="{{ asset('images/avatar_fake2.png') }}" alt="Depoente">
-            </div>
-            <p>Depoimento 4<br><span>Humberto Kraven</span></p>
-        </div>
-
     </div>
 </section>
-
 
 {{-- Formulário de Contato --}}
 <section id="contato" class="formulario_section">
 
 
-        <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
+    <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
 
     <div>
         <form action="{{ route('contato.enviar') }}" method="POST">
@@ -418,195 +415,31 @@
 </section>
 
 <footer>
-    <div>
-        <div>
-            <ul style="margin-top: 0; margin-left:18px">
-                <li>Inicio</li>
-                <li>Sobre a Infortread</li>
-                <li>Nossos Serviços</li>
-                <li>Onde Atuamos</li>
-                <li>Contatos</li>
+    <div class="footer-content">
+        <div class="footer-links">
+            <ul>
+            <li>Início</li>
+            <li>Sobre a Infortread</li>
+            <li>Nossos Serviços</li>
+            <li>Onde Atuamos</li>
+            <li>Contatos</li>
             </ul>
         </div>
-        <div style="text-align: right; margin-right: 18px">
+        <div class="footer-info">
             Rua Djalma Dutra, nº 44, N. Sra das Graças<br/>
             (92) 3303-8200 | (92) 3016-7542<br/>
             (92) 98189-8765 | (92) 99367-6238<br/>
             contato@infortread.com.br | infortread@infortread.com.br<br/>
             facebook.com/infortread<br/>
-            infortread.com.br<br/>
+            infortread.com.br
         </div>
     </div>
-    <div style="text-align: center; justify-content: center">Desenvolvido por Infortread Telecom</div>
+    <div class="footer-bottom">
+        Desenvolvido por Infortread Telecom
+    </div>
 </footer>
 
-
-{{-- Script do Contato de Whatsapp --}}
-<script>
-    function abrirWhatsapp(){
-        const mensagem = encodeURIComponent("Gostaria de falar com um atendente");
-        const telefone = "92985565323";
-        const url = `https://wa.me/${telefone}?text=${mensagem}`;
-        window.location.href = url;
-    }
-</script>
-
-{{-- Script do smooth screen --}}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener("click", function (e) {
-                const target = document.querySelector(this.getAttribute("href"));
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }
-            });
-        });
-    });
-</script>
-
-{{-- Script do carrossel --}}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const carrossel = document.querySelector('.depoimento_carrossel');
-        const totalSlides = document.querySelectorAll('.move_carrossel').length;
-        let currentSlide = 0;
-
-        function updateSlide() {
-            const newLeft = -(currentSlide * 100);
-            carrossel.style.left = `${newLeft}vw`;
-        }
-
-        function moveLeft() {
-            if (currentSlide > 0) {
-                currentSlide--;
-            } else {
-                currentSlide = totalSlides - 1; // vai para o último slide se estiver no primeiro
-            }
-            updateSlide();
-        }
-
-        function moveRight() {
-            if (currentSlide < totalSlides - 1) {
-                currentSlide++;
-            } else {
-                currentSlide = 0; // volta pro primeiro
-            }
-            updateSlide();
-        }
-
-        // Eventos dos botões
-        document.getElementById('left_btn').addEventListener('click', moveLeft);
-        document.getElementById('right_btn').addEventListener('click', moveRight);
-
-        // Auto slide a cada 2 segundos
-        setInterval(moveRight, 5000);
-    });
-</script>
-
-{{-- Mostrar Menu --}}
-<script>
-    function mostramenu(){
-        document.querySelector(".menu_top").classList.toggle("active");
-    }
-</script>
-
-{{-- Sharing page --}}
-<script>
-    function compartilharPagina() {
-        if (navigator.share) {
-            navigator.share({
-                title: document.title,
-                url: window.location.href
-            })
-            .then(() => console.log("Página compartilhada com sucesso!"))
-            .catch((error) => console.error("Erro ao compartilhar:", error));
-        } else {
-            alert("Seu navegador não suporta o compartilhamento.");
-        }
-    }
-</script>
-
-{{-- Script da confirmação de mensagem --}}
-<script>
-    setTimeout(function(){
-        var successMsg = document.querySelector('.successMsg');
-        if(successMsg){
-            successMsg.style.display = 'none';
-        }
-    }, 3000);
-</script>
-
-{{-- Anima números --}}
-<script>
-    function animarNumero(preElement) {
-        if (preElement.dataset.animado === "true") return;
-        preElement.dataset.animado = "true";
-        const target = +preElement.getAttribute('data-target');
-        let valorAtual = 0;
-        const duracao = 2500; // 1.5 segundos
-        const incremento = Math.ceil(target / (duracao / 40)); // passo baseado no tempo
-
-        function atualizar() {
-            valorAtual += incremento;
-            if (valorAtual >= target) {
-            preElement.textContent = `+${target}`;
-            } else {
-            preElement.textContent = `+${valorAtual}`;
-            requestAnimationFrame(atualizar);
-        }
-    }
-
-    preElement.textContent = '+0';
-    atualizar();
-    }
-
-    // Observer para animar sempre que a seção estiver visível
-    const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-        const numeros = entry.target.querySelectorAll('pre[data-target]');
-        numeros.forEach(animarNumero);
-        }
-    });
-    }, { threshold: 0.5 });
-
-    const numbersSection = document.querySelector('.numbers');
-    observer.observe(numbersSection);
-
-</script>
-
-{{-- Script para animação do mvv e cards --}}
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Seleciona os dois tipos de elementos
-        const mvvParagraphs = document.querySelectorAll('.mvv p');
-        const systemCards = document.querySelectorAll('.sistems_card');
-
-        const observerOptions = {
-            threshold: 0.2 // tanto para parágrafos quanto para os cards
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                } else {
-                    entry.target.classList.remove('visible');
-                }
-            });
-        }, observerOptions);
-
-        // Observa todos os elementos desejados
-        mvvParagraphs.forEach(el => observer.observe(el));
-        systemCards.forEach(el => observer.observe(el));
-    });
-</script>
-
+<script src="{{ asset('js/homeScript.js') }}" type="text/javascript"></script>
 
 
 
