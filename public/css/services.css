@@ -7,20 +7,24 @@
     align-items: center;
     width: 85%;
 }
+
 .services_section .title_main{
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 30px;
     color: var(--orange-1);
 }
+
 .services_section .cards_area{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: 20px;
 }
+
 .services_section img{
     width: 200px;
 }
+
 .services_section .sistems_card{
     display: flex;
     flex-direction: column;
@@ -35,23 +39,30 @@
     transform: translateY(40px);
     transform:  opacity 0.6s ease-out, transform 0.2s ease-out;
 }
+
 .sistems_card.visible{
     opacity: 1;
     transform: translateY(0);
 }
+
 .services_section .sistems_card:hover{
     background-color: var(--gray-1);
 }
+
 .services_section .sistems_card h1{
     width: 90%;
     margin: 10px;
     color: var(--orange-1);
 }
+
 .services_section .sistems_card h4{
     font-family: 'Braah';
     font-size: 14px;
-    color: ;
+    color: var(--gray-2);
+    margin: 10px 20px;
+    text-align: center;
 }
+
 .services_section .sistems_card h1::before{
     content: url('../images/icon_title.png');
     display: inline-block;
@@ -60,6 +71,7 @@
     margin-right: 9px;
     margin-top: 20px;
 }
+
 .services_section .sistems_card p{
     font-family: 'Comfortaa';
     font-size: 14px;
@@ -68,6 +80,8 @@
     font-weight: lighter;
     text-align: center;
     cursor: default;
+}
+
 .services_section .sistems_card button{
     font-family: 'Comfortaa';
     font-size: 14px;
@@ -81,6 +95,7 @@
     background: linear-gradient(to right, #E36600, #E32200);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
+
 .services_section .services{
     margin-top: 100px;
     margin-bottom: 30px;
@@ -89,11 +104,13 @@
     align-items: center;
     width: 100%;
 }
+
 .services_section .services .service_card_area{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
+
 .services_section .services .service_card{
     display: flex;
     flex-direction: column;
@@ -103,6 +120,7 @@
 .services_section .services .service_card img{
     margin-bottom: 30px;
 }
+
 .services_section .services .service_card p{
     font-size: 14px;
 }

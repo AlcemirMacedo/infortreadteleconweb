@@ -3,33 +3,7 @@
 @section('content')
 
 {{-- Banner e Menu --}}
-{{-- menu top --}}
-<div class="menu_top">
-    <div class="logo">
-        <a href="/#home"><img src="{{ asset('img/logo.png') }}" alt="Infortread Telecom"></a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="/#home">Início</a></li>
-            <li><a href="/#sobre">A Infortread</a></li>
-            <li><a href="/#sistemas">Sistemas</a></li>
-            <li><a href="/#services">Serviços</a></li>
-            <li><a href="/#contato">Contatos</a></li>
-        </ul>
-    </nav>
-    <div style="justify-content:center">
-        <div class="login">
-            Acesso
-        </div>
-        {{-- <div class="cadastrar">
-            Cadastrar
-        </div> --}}
-    </div>
-
-</div>
-
-<section id="home" class="banner">
-
+{{-- <section id="home" class="banner">
     <div class="fade-bg">
         <header class="bots_fixed">
             <div class="menu-toggle" onclick="mostramenu()">
@@ -39,7 +13,7 @@
                     <div></div>
                 </div>
             </div>
-            {{-- Fim do menu Toggle --}}
+
 
 
             <div class="share" style="display: none" onclick="compartilharPagina()">
@@ -48,7 +22,7 @@
                 </div>
             </div>
         </header>
-        {{-- Logo e frase inicial --}}
+
         <div class="banner-content">
             @if(session('success'))
                 <div class="successMsg" style="position: fixed; bottom: 15px; z-index:5000; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 20px;">
@@ -58,7 +32,7 @@
             <img src="{{ asset('images/logo-w.png') }}" alt="Infortread Telecom">
             <h2>A melhor solução para sua <br/>empresa ou instituição</h2>
 
-            {{-- Botão do CTA --}}
+
             <div class="area-cta">
                 <div class="btn-cta" onclick="abrirWhatsapp()">
                     <p>Entrar em contato</p>
@@ -67,7 +41,10 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
+<x-banner>
+    a melhor solução para <br/>sua empresa ou instituição
+</x-banner>
 
 {{-- Sessão Sobre a Infortread --}}
 <section id="sobre" class="about_section">
@@ -75,7 +52,7 @@
     <div class="about_p1">
 
         <div style="flex:1">
-            <h1 style="margin-top: 20px; margin-bottom:15px">Sobre a Infortread</h1>
+            <h1 style="margin-top: 30px; margin-bottom:15px">Sobre a Infortread</h1>
             <p>
                 Fundada em 2009, a Infortread atua no setor de tecnologia da informação, com especialização no desenvolvimento de sistemas e na distribuição de internet, tendo como principal foco os municípios do Estado do Amazonas.
             </p>
@@ -145,7 +122,7 @@
             <h1>STFolha</h1>
             <h4>Folha de Pagamento para o Setor Público</h4>
             <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
-            <button>Contratar</button>
+            <a href="/stfolha"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
@@ -165,19 +142,42 @@
         <div class="sistems_card">
             <h1>iE-Notas</h1>
             <h4>Emissão de Notas Fiscais Eletrônicas</h4>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <p>Sistema da INFORTREAD para emissão e gerenciamento de notas fiscais eletrônicas, com geração e validação de arquivos XML. Facilita o controle fiscal e garante conformidade com os padrões exigidos por órgãos reguladores.</p>
             <button>Contratar</button>
         </div>
 
         <div class="sistems_card">
-            <h1>Compras e Estoque</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <h1>iLicitação</h1>
+            <h4>Gestão de Licitações Públicas com Integração ao E-Contas</h4>
+            <p>Solução voltada ao gerenciamento de processos licitatórios, com funcionalidades que organizam e registram todas as etapas das licitações. Já integrada ao E-Contas, atende às exigências atuais dos tribunais de contas de forma prática e segura.</p>
             <button>Contratar</button>
         </div>
 
         <div class="sistems_card">
-            <h1>Cidade Digital</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit<span>...Saiba mais</span></p>
+            <h1>iCE - Compras e Estoque</h1>
+            <h4>Controle de Almoxarifado e Compras Públicas</h4>
+            <p>Sistema completo para emissão de requisições, ordens de compra, entradas e saídas de materiais. Permite gestão por setor e garante maior organização e rastreabilidade dos recursos físicos da administração pública.</p>
+            <button>Contratar</button>
+        </div>
+
+        <div class="sistems_card">
+            <h1>iPatrimonial</h1>
+            <h4>Gestão e Controle de Patrimônio Público</h4>
+            <p>Sistema que realiza o registro e controle dos bens patrimoniais de uma entidade, abrangendo desde móveis até imóveis. Permite auditorias eficazes, evita perdas e oferece total visibilidade sobre o patrimônio público.</p>
+            <button>Contratar</button>
+        </div>
+
+        <div class="sistems_card">
+            <h1>iProtocolo</h1>
+            <h4>Protocolo e Encaminhamento de Documentos Oficiais</h4>
+            <p>Sistema destinado ao registro e acompanhamento de ofícios e documentos enviados entre setores. Garante rastreabilidade, histórico de tramitações e organização eficiente dos processos administrativos internos.</p>
+            <button>Contratar</button>
+        </div>
+
+        <div class="sistems_card">
+            <h1>Consultoria em E-Social para Entidades Públicas</h1>
+            <h4>Apoio Técnico para Conformidade Trabalhista</h4>
+            <p>Serviço de consultoria especializada para prefeituras, câmaras e órgãos públicos que necessitam atender às exigências do E-Social. Auxiliamos na adequação de processos e fluxos de dados, garantindo conformidade legal e evitando sanções.</p>
             <button>Contratar</button>
         </div>
 
@@ -380,66 +380,10 @@
     </div>
 </section>
 
-{{-- Formulário de Contato --}}
-<section id="contato" class="formulario_section">
 
-
-    <h1 style="color: white; margin-top:23px; margin-bottom:14px">Pedido de Orçamento</h1>
-
-    <div>
-        <form action="{{ route('contato.enviar') }}" method="POST">
-            @csrf
-            <label for="nome">Nome / Empresa / Instituição</label>
-            <input name="nome" type="text" required>
-
-            <label for="email">E-mail</label>
-            <input name="email" type="email" required>
-
-            <label for="contato">Contato Whatsapp</label>
-            <input name="contato" type="tel" required>
-
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" required name="texto" id="mensagem" rows="10" style="padding-top: 15px; word-wrap:break-word; overflow-wrap:break-word"></textarea>
-
-            <div style="display: flex; text-align: center; width:100%; justify-content:space-between">
-                <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
-                <button type="reset" class="button_1">Limpar</button>
-            </div>
-        </form>
-        <div class="form_logo">
-            <img src="{{ asset('img/logo.png') }}" alt="">
-        </div>
-    </div>
-
-
-</section>
-
-<footer>
-    <div class="footer-content">
-        <div class="footer-links">
-            <ul>
-            <li>Início</li>
-            <li>Sobre a Infortread</li>
-            <li>Nossos Serviços</li>
-            <li>Onde Atuamos</li>
-            <li>Contatos</li>
-            </ul>
-        </div>
-        <div class="footer-info">
-            Rua Djalma Dutra, nº 44, N. Sra das Graças<br/>
-            (92) 3303-8200 | (92) 3016-7542<br/>
-            (92) 98189-8765 | (92) 99367-6238<br/>
-            contato@infortread.com.br | infortread@infortread.com.br<br/>
-            facebook.com/infortread<br/>
-            infortread.com.br
-        </div>
-    </div>
-    <div class="footer-bottom">
-        Desenvolvido por Infortread Telecom
-    </div>
-</footer>
-
-<script src="{{ asset('js/homeScript.js') }}" type="text/javascript"></script>
+{{-- Nomeei o fomrulário e o rodapé como Rodapé --}}
+<x-rodape>
+</x-rodape>
 
 
 

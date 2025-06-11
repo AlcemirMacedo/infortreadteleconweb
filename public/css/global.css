@@ -1,26 +1,33 @@
 /* Braah Font bold */
-@font-face {
+/* @font-face{
     font-family: 'Braah';
     src: url('../fonts/BraahOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+} */
+@font-face{
+    font-family: 'Braah';
+    src: url('../fonts/FjallaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 /* Regular font */
-@font-face {
+@font-face{
     font-family: 'Comfortaa';
     src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 /* Light font */
-@font-face {
+@font-face{
     font-family: 'Comfortaa';
     src: url('../fonts/Comfortaa-Light.ttf') format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 /* Bold font */
-@font-face {
+@font-face{
     font-family: 'Comfortaa';
     src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
     font-weight: bold;
@@ -80,7 +87,6 @@ span{
 [id] {
     scroll-margin-top: 60px; /* mesma altura do menu fixo */
 }
-
 .button_1{
    width: 156px;
    height: 40px;
@@ -92,7 +98,6 @@ span{
    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
    border: none;
 }
-
 button{
     font-family: 'Comfortaa';
     font-size: 14px;
@@ -111,7 +116,6 @@ button:hover{
     background-color: var(--blue-2);
     color: var(--white);
 }
-
 .login, .cadastrar{
     display: flex;
     align-items: center;
@@ -132,12 +136,10 @@ button:hover{
 html{
     scroll-behavior: smooth;
 }
-
 input, textarea, select{
     all:unset;
     box-sizing: border-box;
 }
-
 input, textarea{
     background-color: var(--white);
     border-radius: 10px;
@@ -154,7 +156,6 @@ label{
     font-size: 12px;
     margin-bottom: 8px;
 }
-
 footer{
     background-color: var(--black-1);
     color: var(--white);
@@ -170,4 +171,7 @@ ul{
 }
 li {
     list-style: none;
+}
+p{
+    cursor: default;
 }

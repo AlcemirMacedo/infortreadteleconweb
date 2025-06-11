@@ -89,122 +89,119 @@
     left: 20px;
 }
 
-
-.banner{
-    position: relative;
-    height: 500px;
-    width: 100%;
-    background: url('../images/computer-sistem-hand.jpeg');
-    background-position: center;
-    background-size: cover;
-    border-bottom: 5px solid var(--blue-2);
-}
-
 .fade-bg{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 
-/* logo e texto principal */
+    /* logo e texto principal */
 
-.banner-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-}
-.fade-bg .banner-content img{
-    display: none;
-    width: 350px;
-    margin-bottom: 17px;
-}
-.fade-bg h2{
-    width: 100%;
-    text-align: center;
-    color: var(--white);
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 150%;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
-.share{
-    position:fixed;
-    background-color: var(--black-1);
-    bottom: 15px;
-    z-index: 2000;
-    right: 10px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    border: 1px solid var(--blue-2);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-}
-.share:hover{
-    background-color: var(--blue-2);
-    border: 1px solid var(--white);
-}
-.share>div{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.share>div img{
-    width: 100%
-}
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+    }
+    .fade-bg .banner-content img{
+        display: none;
+        width: 350px;
+        margin-bottom: 17px;
+    }
+    .fade-bg h2{
+        width: 100%;
+        text-align: center;
+        color: var(--white);
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    .fade-bg h1{
+        font-size: 50px;
+        color: var(--white);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .share{
+        position:fixed;
+        background-color: var(--black-1);
+        bottom: 15px;
+        z-index: 2000;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        border: 1px solid var(--blue-2);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    .share:hover{
+        background-color: var(--blue-2);
+        border: 1px solid var(--white);
+    }
+    .share>div{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .share>div img{
+        width: 100%
+    }
 
 
-.fade-bg .area-cta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px 30px;
-    margin-top: 50px;
-}
-.fade-bg .area-cta .btn-cta{
-    background-color: var(--green-contact);
-    color: var(--white);
-    cursor: pointer;
-    text-transform: uppercase;
-    width: 230px;
-    height: 68px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: all 0.4s ease;
-}
+    .fade-bg .area-cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px 30px;
+        margin-top: 50px;
+    }
+    .fade-bg .area-cta .btn-cta{
+        background-color: var(--green-contact);
+        color: var(--white);
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 230px;
+        height: 68px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: all 0.4s ease;
+    }
 
-.fade-bg .area-cta .btn-cta:hover{
-    background-color: var(--blue-2);
-    border-radius: 10px;
-}
+    .fade-bg .area-cta .btn-cta:hover{
+        background-color: var(--blue-2);
+        border-radius: 10px;
+    }
 
-.fade-bg .area-cta .btn-cta p{
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
+    .fade-bg .area-cta .btn-cta p{
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
 
-.fade-bg .area-cta .btn-cta img{
-    width: 20px;
-    height: 21px;
-    margin-top: 15px;
-}
+    .fade-bg .area-cta .btn-cta img{
+        width: 20px;
+        height: 21px;
+        margin-top: 15px;
+    }
+
+
 
 
 
@@ -231,24 +228,95 @@
         left: 0%;
     }
 
-    .banner{
-        height: 365px;
-    }
-
     .menu_top > div:nth-child(1){
-        display: none;
-    }
+            display: none;
+        }
 
-    .menu_top > div:nth-child(3){
-        display: none;
-    }
+        .menu_top > div:nth-child(3){
+            display: none;
+        }
 
-    .bots_fixed{
-        position: fixed;
-        z-index: 3000;
-        top: 10px;
-        right: 10px;
-    }
+        .bots_fixed{
+            position: fixed;
+            z-index: 3000;
+            top: 10px;
+            right: 10px;
+        }
+        .banner-content{
+            margin-top: -75px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        .fade-bg .banner-content img{
+            display: flex;
+            width: 192px;
+            margin-bottom: 17px;
+        }
+        .fade-bg h2{
+            width: 225px;
+            text-align: center;
+            color: var(--white);
+            font-weight: lighter;
+            font-size: 16px;
+            line-height: 150%;
+            margin: 0;
+            padding: 0;
+            text-transform: none;
+            text-shadow: 2px 2px 0 black;
+        }
+
+        .fade-bg h1{
+            font-size: 20px;
+            color: var(--white);
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 30px;
+        }
+        .fade-bg .area-cta{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 231px;
+            height: 71px;
+            bottom: 0;
+            background-color: var(--white);
+            border-radius: 30px 30px 0 0;
+        }
+        .fade-bg .area-cta .btn-cta{
+            background-color: var(--green-contact);
+            color: var(--white);
+            text-transform: uppercase;
+            width: 178px;
+            height: 34px;
+            font-weight: lighter;
+            font-size: 11px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .fade-bg .area-cta .btn-cta:hover{
+            background-color: var(--blue-2);
+            border-radius: 50px;
+        }
+
+        .fade-bg .area-cta .btn-cta p{
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .fade-bg .area-cta .btn-cta img{
+            width: 20px;
+            height: 21px;
+            margin-top: 15px;
+        }
+
 
 
     /* Menu Mobile */
@@ -328,76 +396,6 @@
     }
     .share>div{
         width: 20px;
-    }
-
-
-    /* logo e texto principal */
-
-    .banner-content{
-        margin-top: -75px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-    .fade-bg .banner-content img{
-        display: flex;
-        width: 192px;
-        margin-bottom: 17px;
-    }
-    .fade-bg h2{
-        width: 225px;
-        text-align: center;
-        color: var(--white);
-        font-weight: lighter;
-        font-size: 16px;
-        line-height: 150%;
-        margin: 0;
-        padding: 0;
-        text-transform: none;
-        text-shadow: 2px 2px 0 black;
-    }
-
-    .fade-bg .area-cta{
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 231px;
-        height: 71px;
-        bottom: 0;
-        background-color: var(--white);
-        border-radius: 30px 30px 0 0;
-    }
-    .fade-bg .area-cta .btn-cta{
-        background-color: var(--green-contact);
-        color: var(--white);
-        text-transform: uppercase;
-        width: 178px;
-        height: 34px;
-        font-weight: lighter;
-        font-size: 11px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .fade-bg .area-cta .btn-cta:hover{
-        background-color: var(--blue-2);
-    }
-
-    .fade-bg .area-cta .btn-cta p{
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-    }
-
-    .fade-bg .area-cta .btn-cta img{
-        width: 20px;
-        height: 21px;
-        margin-top: 15px;
     }
 
 }

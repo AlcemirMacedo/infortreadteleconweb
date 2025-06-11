@@ -12,19 +12,18 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.formulario_section>div{
+.formulario_section .form_area{
     width: 85%;
     display: flex;
     justify-content: space-between;
 }
 .formulario_section form{
-    width: 50%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
+
 .formulario_section .form_logo{
     display: flex;
     flex: 1;
@@ -56,22 +55,20 @@
         padding-bottom: 0;
         text-align: center;
     }
-    .formulario_section>div{
+    .formulario_section .form_area{
         width: 90%;
-    }
-    .formulario_section .form_logo{
-        display: none;
+        display: flex;
+        justify-content: space-between;
     }
     .formulario_section form{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 0;
+    }
 
-    }
-    .formulario_section input, textarea {
-        width: 100%;
-    }
 
 }
