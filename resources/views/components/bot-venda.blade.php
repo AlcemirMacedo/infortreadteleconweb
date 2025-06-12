@@ -1,6 +1,6 @@
 
 <div class="bot_venda_style">
-    <a href="{{ $link }}">Contratar este Sistema</a>
+    Contratar este Sistema
 </div>
 
 <script>

@@ -129,7 +129,7 @@
             <h1>iContracheque Online</h1>
             <h4>Consulta Online de Contracheques</h4>
             <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
-            <button>Contratar</button>
+            <a href="/cconline"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">

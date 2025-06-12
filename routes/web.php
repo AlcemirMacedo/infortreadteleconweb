@@ -8,3 +8,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'index']);
 Route::post('/contato/enviar', [ContatoController::class, 'enviarContato'])->name('contato.enviar');
 Route:: get('/stfolha', [MainController::class, 'stfolha']);
+Route:: get('/cconline', [MainController::class, 'cconline']);

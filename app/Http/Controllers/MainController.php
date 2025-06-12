@@ -15,4 +15,8 @@ class MainController extends Controller
     public function stfolha(){
         return view('stfolha', self::usuario);
     }
+
+    public function cconline(){
+        return view('cconline', self::usuario);
+    }
 }

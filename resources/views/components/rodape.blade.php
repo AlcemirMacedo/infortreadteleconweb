@@ -14,7 +14,7 @@
 
             <div>
                 <label for="email">E-mail</label>
-                <input name="email" type="email" required>
+                <input name="email" type="text" required>
             </div>
 
             <div>

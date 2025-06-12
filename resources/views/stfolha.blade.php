@@ -16,12 +16,13 @@
             <h1>STFolha</h1>
             <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
         </div>
+
         <div>
             <img src="{{ asset('images/sis_folha-pagamento.png') }}" alt="STFolha">
         </div>
     </div>
     <x-bot-venda>
-
+        
     </x-bot-venda>
 </section>
 

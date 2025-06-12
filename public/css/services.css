@@ -170,8 +170,7 @@
         margin-bottom: 15px;
     }
     .services_section .sistems_card:hover{
-        background-color: var(--blue-2);
-        color: var(--white);
+        background-color: var(--gray-1);
     }
     .services_section .sistems_card h1{
         width: 90%;
