@@ -22,7 +22,7 @@
         </div>
     </div>
     <x-bot-venda>
-        
+
     </x-bot-venda>
 </section>
 

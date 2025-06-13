@@ -6,23 +6,21 @@
     align-items: center;
     justify-content: center;
 }
-.secundary h1{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
+
 .secundary_content{
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: left;
     overflow: hidden;
+    position: relative;
 }
-.secundary_content div{
-    flex: 1;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
+
+.secundary h1{
+    font-size: 30px;
+    margin-bottom: 30px;
 }
+
 .bot_venda_style{
     width: 100%;
     border-radius: 10px;

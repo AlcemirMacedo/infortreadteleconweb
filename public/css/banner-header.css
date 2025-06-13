@@ -186,7 +186,6 @@
 
     .fade-bg .area-cta .btn-cta:hover{
         background-color: var(--blue-2);
-        border-radius: 10px;
     }
 
     .fade-bg .area-cta .btn-cta p{
