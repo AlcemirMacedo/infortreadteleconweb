@@ -7,15 +7,15 @@
 
 @section('content')
     <x-banner background="{{ asset('images/contracheque.webp') }}">
-        iContracheque Online<br/>Consulta Online de Contracheques
+        SAM<br/>Sistema de Arrecadação Municipal
     </x-banner>
 
     <section class="secundary">
 
         <div class="secundary_content" style="display: flex;">
             <div style="flex: 1">
-                <h1>iContracheque Online</h1>
-                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
+                <h1>Gestão Tributária e Emissão de DUAMs</h1>
+                <p>Solução completa para arrecadação de tributos municipais, como alvarás, construção, notas avulsas, IPTU, ITBI e água. Permite a geração de DUAMs com pagamento via Pix, oferecendo agilidade tanto para o contribuinte quanto para a gestão pública.</p>
 
                 <x-links-relacionados>
                 </x-links-relacionados>

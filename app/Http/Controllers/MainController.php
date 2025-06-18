@@ -19,4 +19,32 @@ class MainController extends Controller
     public function cconline(){
         return view('cconline', self::usuario);
     }
+
+    public function sam(){
+        return view('sam', self::usuario);
+    }
+
+    public function ienotas(){
+        return view('ienotas', self::usuario);
+    }
+
+    public function ilicitacao(){
+        return view('ilicitacao', self::usuario);
+    }
+
+    public function ice(){
+        return view('ice', self::usuario);
+    }
+
+    public function ipatrimonial(){
+        return view('ipatrimonial', self::usuario);
+    }
+
+    public function iprotocolo(){
+        return view('iprotocolo', self::usuario);
+    }
+
+    public function consultoria(){
+        return view('consultoria', self::usuario);
+    }
 }

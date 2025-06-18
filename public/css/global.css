@@ -126,7 +126,6 @@ button:hover{
     margin-right: 15px;
     color: var(--white);
     font-size: 12px;
-    cursor: pointer;
     transition: all 0.4s ease;
 }
 .login:hover, .cadastrar:hover{

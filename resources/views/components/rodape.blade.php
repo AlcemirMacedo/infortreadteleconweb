@@ -7,7 +7,35 @@
     <div class="form_area">
         <form action="{{ route('contato.enviar') }}" method="POST">
             @csrf
-            <div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="nome">Nome / Empresa / Instituição</label>
+                    <input type="text" name="nome" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" class="form-control">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="mensagem">Telefone</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" class="form-control"></textarea>
+                </div>
+            </div>
+            <div style="display: flex; text-align: center; width:100%; justify-content:space-between; grid-column: span 2;">
+                <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
+                <button type="reset" class="button_1">Limpar</button>
+            </div>
+            {{-- <div>
                 <label for="nome">Nome / Empresa / Instituição</label>
                 <input name="nome" type="text" required>
             </div>
@@ -30,7 +58,7 @@
             <div style="display: flex; text-align: center; width:100%; justify-content:space-between; grid-column: span 2;">
                 <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
                 <button type="reset" class="button_1">Limpar</button>
-            </div>
+            </div> --}}
         </form>
     </div>
 

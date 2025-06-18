@@ -7,15 +7,15 @@
 
 @section('content')
     <x-banner background="{{ asset('images/contracheque.webp') }}">
-        iContracheque Online<br/>Consulta Online de Contracheques
+        iPatrimonial
     </x-banner>
 
     <section class="secundary">
 
         <div class="secundary_content" style="display: flex;">
             <div style="flex: 1">
-                <h1>iContracheque Online</h1>
-                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
+                <h1>Gestão e Controle de Patrimônio Público</h1>
+                <p>Sistema que realiza o registro e controle dos bens patrimoniais de uma entidade, abrangendo desde móveis até imóveis. Permite auditorias eficazes, evita perdas e oferece total visibilidade sobre o patrimônio público.</p>
 
                 <x-links-relacionados>
                 </x-links-relacionados>
@@ -26,10 +26,12 @@
                 <img src="{{ asset('images/sis_folha-pagamento.png') }}" alt="STFolha">
             </div>
         </div>
-        <x-bot-venda>
 
+        <x-bot-venda>
         </x-bot-venda>
+
         <x-sistemas-component></x-sistemas-component>
+
     </section>
 
 

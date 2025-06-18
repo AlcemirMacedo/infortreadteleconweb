@@ -113,7 +113,7 @@
 </section>
 
 {{-- Sessão de Sistemas e serviços --}}
-<section id="sistemas" class="services_section">
+{{-- <section id="sistemas" class="services_section">
     <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
     <h1 class="title_main">Nossos Sistemas</h1>
 
@@ -211,79 +211,12 @@
         </div>
     </div>
 
-</section>
+</section> --}}
 
-{{-- Sessão de Locais de Atuação --}}
-<section class="locais_section">
+<x-sistemas-component></x-sistemas-component>
 
-    <h1>Locais de atuação</h1>
 
-    <div class="mapa_area">
-        <div class="mapa-container">
-            <!-- SVG com linhas pontilhadas -->
-            <svg class="linhas" width="100%" height="100%">
 
-                <!-- Coari -->
-                <path d="M 20 20 V 180 H 170" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
-                <circle cx="170" cy="180" r="4" fill="#E36600" />
-                <circle cx="20" cy="20" r="4" fill="#E36600" />
-
-                <!-- Tefé -->
-                <path d="M 340 50 V 200 H 180" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
-                <circle cx="340" cy="50" r="4" fill="#E36600" />
-                <circle cx="180" cy="200" r="4" fill="#E36600" />
-
-                <!-- Canutama -->
-                <path d="M 150 210 H 10 V 320" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
-                <circle cx="150" cy="210" r="4" fill="#E36600" />
-                <circle cx="10" cy="320" r="4" fill="#E36600" />
-
-                <!-- Beruri -->
-                <path d="M 200 220 H 330 V 350" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
-                <circle cx="200" cy="220" r="4" fill="#E36600" />
-                <circle cx="330" cy="360" r="4" fill="#E36600" />
-            </svg>
-
-            <div class="text_map" style="left: 30px; top: 18px;">
-                <span>Coari</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </div>
-
-            <div class="text_map" style="text-align:right; top: 47px; right:20px">
-                <span>Tefé</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </div>
-
-            <div class="text_map" style="text-align:left; top: 295px; left:20px">
-                <span>Canutama</span> - dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </div>
-
-            <div class="text_map" style="text-align:right; top: 335px; right:30px">
-                <span>Beruri</span> - Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.
-            </div>
-        </div>
-
-        <div class="locais_list" style="height: 100%">
-            <h3>Outras Localidades onde a Infortread atua:</h3>
-            <ul>
-                <div>
-                    <li>Boa do Acre</li>
-                    <li>Anamã</li>
-                    <li>Tefé</li>
-                    <li>Borba</li>
-                    <li>Careiro</li>
-                    <li>Manacapuru</li>
-                    <li>Itacoatiara</li>
-                    <li>Borba</li>
-                    <li>Cacau Pireira</li>
-                    <li>Urucurituba</li>
-                    <li>Careiro Castanho</li>
-                    <li>Canutama</li>
-                </div>
-            </ul>
-        </div>
-
-    </div>
-
-</section>
 
 {{-- Helpe Desk section --}}
 <section class="help_section">

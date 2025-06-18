@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: var(--gray-1);
+    background: var(--gray-1);
     padding-top: 30px;
 }
 
@@ -17,16 +17,14 @@
 }
 
 .mapa_area{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    place-items: center;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mapa_area .locais_list div{
     display: flex;
-    flex-wraP: wrap;
+    flex-wrap: wrap;
     font-size:14px;
     text-align: left;
 }
@@ -62,7 +60,7 @@
 .mapa-container .text_map{
     font-family: 'Comfortaa', sans-serif;
     font-weight: lighter;
-    font-size: 9px;
+    font-size: 14px;
     max-width: 190px;
     position:absolute;
 
@@ -109,7 +107,7 @@
 
     .mapa-container {
         width: 350px;
-        height: 370px;
+        height: 410px;
     }
     .linhas {
     position: absolute;
@@ -120,7 +118,7 @@
     .mapa-container .text_map{
         font-family: 'Comfortaa', sans-serif;
         font-weight: lighter;
-        font-size: 9px;
+        font-size: 14px;
         max-width: 190px;
         position:absolute;
 

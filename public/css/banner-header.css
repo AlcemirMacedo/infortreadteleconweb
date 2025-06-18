@@ -1,8 +1,9 @@
 /* CSS do topo do site incluindo menu banner e botão de contato */
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
-.menu_top{
+
+.menu_top {
     width: 100%;
     height: 60px;
     background-color: rgba(10, 122, 197, 0.7);
@@ -11,33 +12,39 @@
     display: flex;
     justify-content: center;
 }
-.menu_top div{
+
+.menu_top div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.menu_top > div:nth-child(1){
+
+.menu_top>div:nth-child(1) {
     flex: 1;
 }
-.menu_top > nav:nth-child(2){
+
+.menu_top>nav:nth-child(2) {
     justify-content: center;
     flex: 4;
 }
-.menu_top > div:nth-child(3){
+
+.menu_top>div:nth-child(3) {
     justify-content: center;
     flex: 1;
 }
-.menu_top .logo img{
+
+.menu_top .logo img {
     width: 110px;
-    cursor: pointer;
     height: auto;
     filter: invert(100%) sepia(100%) saturate(0%) brightness(200%);
     transition: filter 0.4s ease;
 }
-.menu_top .logo img:hover{
+
+.menu_top .logo img:hover {
     filter: none;
 }
-.menu_top ul{
+
+.menu_top ul {
     display: flex;
     width: 100%;
     padding: 0;
@@ -46,7 +53,8 @@
     justify-content: space-between;
     align-items: center;
 }
-.menu_top ul li{
+
+.menu_top ul li {
     color: var(--white);
     padding: 0;
     position: relative;
@@ -58,7 +66,8 @@
     font-size: 14px;
     flex: 1;
 }
-.menu_top ul li a:link{
+
+.menu_top ul li a:link {
     height: 100%;
     width: 100%;
     display: flex;
@@ -66,12 +75,13 @@
     justify-content: center;
     text-align: center;
 }
-.menu_top ul li:hover{
+
+.menu_top ul li:hover {
     background-color: var(--white);
     color: var(--blue-2);
 }
 
-.menu_top ul li::before{
+.menu_top ul li::before {
     content: url('../images/seta_menu.png');
     display: inline-block;
     position: absolute;
@@ -84,134 +94,139 @@
     justify-content: center;
     text-align: center;
 }
-.menu_top ul li:hover::before{
+
+.menu_top ul li:hover::before {
     transform: rotate(450deg);
     left: 20px;
 }
 
-.fade-bg{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
+.fade-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
-    /* logo e texto principal */
+/* logo e texto principal */
 
-    .banner-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100%;
-    }
-    .fade-bg .banner-content img{
-        display: none;
-        width: 350px;
-        margin-bottom: 17px;
-    }
-    .fade-bg h2{
-        width: 100%;
-        text-align: center;
-        color: var(--white);
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 150%;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-    }
-    .fade-bg h1{
-        font-size: 50px;
-        color: var(--white);
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .share{
-        position:fixed;
-        background-color: var(--black-1);
-        bottom: 15px;
-        z-index: 2000;
-        right: 10px;
-        height: 30px;
-        width: 30px;
-        border-radius: 50px;
-        border: 1px solid var(--blue-2);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.4s ease;
-    }
-    .share:hover{
-        background-color: var(--blue-2);
-        border: 1px solid var(--white);
-    }
-    .share>div{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .share>div img{
-        width: 100%
-    }
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
 
+.fade-bg .banner-content img {
+    display: none;
+    width: 350px;
+    margin-bottom: 17px;
+}
 
-    .fade-bg .area-cta{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 30px 30px;
-        margin-top: 50px;
-    }
-    .fade-bg .area-cta .btn-cta{
-        background-color: var(--green-contact);
-        color: var(--white);
-        cursor: pointer;
-        text-transform: uppercase;
-        width: 230px;
-        height: 68px;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        transition: all 0.4s ease;
-    }
+.fade-bg h2 {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
 
-    .fade-bg .area-cta .btn-cta:hover{
-        background-color: var(--blue-2);
-    }
+.fade-bg h1 {
+    font-size: 50px;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+}
 
-    .fade-bg .area-cta .btn-cta p{
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-    }
+.share {
+    position: fixed;
+    background-color: var(--black-1);
+    bottom: 15px;
+    z-index: 2000;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid var(--blue-2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
 
-    .fade-bg .area-cta .btn-cta img{
-        width: 20px;
-        height: 21px;
-        margin-top: 15px;
-    }
+.share:hover {
+    background-color: var(--blue-2);
+    border: 1px solid var(--white);
+}
+
+.share>div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share>div img {
+    width: 100%
+}
 
 
+.fade-bg .area-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 30px;
+    margin-top: 50px;
+}
 
+.fade-bg .area-cta .btn-cta {
+    background-color: var(--green-contact);
+    color: var(--white);
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 230px;
+    height: 68px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.4s ease;
+}
+
+.fade-bg .area-cta .btn-cta:hover {
+    background-color: var(--blue-2);
+}
+
+.fade-bg .area-cta .btn-cta p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.fade-bg .area-cta .btn-cta img {
+    width: 20px;
+    height: 21px;
+    margin-top: 15px;
+}
 
 
 /* /////////////////////////////////// */
 
 
-
 @media (max-width: 600px) {
 
 
-    .menu_top{
+    .menu_top {
         width: 70%;
         height: auto;
         background-color: rgba(10, 122, 197, 0.7);
@@ -223,108 +238,115 @@
         overflow: hidden;
         transition: all 0.4s ease-in-out;
     }
-    .menu_top.active{
+
+    .menu_top.active {
         left: 0%;
     }
 
-    .menu_top > div:nth-child(1){
-            display: none;
-        }
+    .menu_top>div:nth-child(1) {
+        display: none;
+    }
 
-        .menu_top > div:nth-child(3){
-            display: none;
-        }
+    .menu_top>div:nth-child(3) {
+        display: none;
+    }
 
-        .bots_fixed{
-            position: fixed;
-            z-index: 3000;
-            top: 10px;
-            right: 10px;
-        }
-        .banner-content{
-            margin-top: -75px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: auto;
-        }
-        .fade-bg .banner-content img{
-            display: flex;
-            width: 192px;
-            margin-bottom: 17px;
-        }
-        .fade-bg h2{
-            width: 225px;
-            text-align: center;
-            color: var(--white);
-            font-weight: lighter;
-            font-size: 16px;
-            line-height: 150%;
-            margin: 0;
-            padding: 0;
-            text-transform: none;
-            text-shadow: 2px 2px 0 black;
-        }
+    .bots_fixed {
+        position: fixed;
+        z-index: 3000;
+        top: 10px;
+        right: 10px;
+    }
 
-        .fade-bg h1{
-            font-size: 20px;
-            color: var(--white);
-            text-align: center;
-            text-transform: uppercase;
-            line-height: 30px;
-        }
-        .fade-bg .area-cta{
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 231px;
-            height: 71px;
-            bottom: 0;
-            background-color: var(--white);
-            border-radius: 30px 30px 0 0;
-        }
-        .fade-bg .area-cta .btn-cta{
-            background-color: var(--green-contact);
-            color: var(--white);
-            text-transform: uppercase;
-            width: 178px;
-            height: 34px;
-            font-weight: lighter;
-            font-size: 11px;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
+    .banner-content {
+        margin-top: -75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
 
-        .fade-bg .area-cta .btn-cta:hover{
-            background-color: var(--blue-2);
-            border-radius: 50px;
-        }
+    .fade-bg .banner-content img {
+        display: flex;
+        width: 192px;
+        margin-bottom: 17px;
+    }
 
-        .fade-bg .area-cta .btn-cta p{
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-        }
+    .fade-bg h2 {
+        width: 225px;
+        text-align: center;
+        color: var(--white);
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        text-transform: none;
+        text-shadow: 2px 2px 0 black;
+    }
 
-        .fade-bg .area-cta .btn-cta img{
-            width: 20px;
-            height: 21px;
-            margin-top: 15px;
-        }
+    .fade-bg h1 {
+        font-size: 20px;
+        color: var(--white);
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+
+    .fade-bg .area-cta {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 231px;
+        height: 71px;
+        bottom: 0;
+        background-color: var(--white);
+        border-radius: 30px 30px 0 0;
+    }
+
+    .fade-bg .area-cta .btn-cta {
+        background-color: var(--green-contact);
+        color: var(--white);
+        text-transform: uppercase;
+        width: 178px;
+        height: 34px;
+        font-weight: lighter;
+        font-size: 11px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .fade-bg .area-cta .btn-cta:hover {
+        background-color: var(--blue-2);
+        border-radius: 50px;
+    }
+
+    .fade-bg .area-cta .btn-cta p {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .fade-bg .area-cta .btn-cta img {
+        width: 20px;
+        height: 21px;
+        margin-top: 15px;
+    }
 
 
 
     /* Menu Mobile */
-    .menu_top ul{
+    .menu_top ul {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .menu_top ul li{
+
+    .menu_top ul li {
         color: var(--white);
         padding: 0;
         width: 100%;
@@ -336,7 +358,8 @@
         font-size: 14px;
         flex: 1;
     }
-    .menu_top ul li a:link{
+
+    .menu_top ul li a:link {
         height: 100%;
         width: 100%;
         display: flex;
@@ -344,7 +367,8 @@
         justify-content: center;
         text-align: center;
     }
-    .menu_top ul li::before{
+
+    .menu_top ul li::before {
         content: none
     }
 
@@ -354,9 +378,9 @@
 
 
     /* menu toggle */
-    .menu-toggle{
+    .menu-toggle {
         display: flex;
-        position:absolute;
+        position: absolute;
         top: 15px;
         right: 15px;
         height: 37px;
@@ -368,20 +392,23 @@
         align-items: center;
         justify-content: space-around;
     }
-    .menu-toggle>div{
+
+    .menu-toggle>div {
         height: 15px;
         width: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .menu-toggle div>div{
+
+    .menu-toggle div>div {
         height: 1px;
         width: 20px;
         background-color: white;
     }
-    .share{
-        position:absolute;
+
+    .share {
+        position: absolute;
         width: 37px;
         height: 37px;
         top: 66px;
@@ -389,11 +416,13 @@
         border: none;
         background-color: var(--gray-2);
     }
-    .share:hover{
+
+    .share:hover {
         background-color: var(--gray-2);
         border: none;
     }
-    .share>div{
+
+    .share>div {
         width: 20px;
     }
 

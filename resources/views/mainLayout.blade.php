@@ -34,7 +34,8 @@
     </nav>
     <div style="justify-content:center">
         <div class="login">
-            Olá, {{ $name }}
+            {{-- Olá, {{ $name }} --}}
+            {{ date('d/m/Y | H:i:s') }}
         </div>
         {{-- <div class="cadastrar">
             Cadastrar

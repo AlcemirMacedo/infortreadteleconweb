@@ -7,16 +7,16 @@
 
 @section('content')
     <x-banner background="{{ asset('images/contracheque.webp') }}">
-        iContracheque Online<br/>Consulta Online de Contracheques
+        iLicitação<br/>Gestão de Licitações Públicas
     </x-banner>
 
     <section class="secundary">
 
         <div class="secundary_content" style="display: flex;">
             <div style="flex: 1">
-                <h1>iContracheque Online</h1>
-                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
-
+                <h1>Gestão de Licitações Públicas com Integração ao E-Contas</h1>
+                <p>Solução voltada ao gerenciamento de processos licitatórios, com funcionalidades que organizam e registram todas as etapas das licitações. Já integrada ao E-Contas, atende às exigências atuais dos tribunais de contas de forma prática e segura.</p>
+                
                 <x-links-relacionados>
                 </x-links-relacionados>
 

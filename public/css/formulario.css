@@ -41,24 +41,8 @@
 
 @media (max-width:601px){
 
-    .formulario_section{
-        background-color: var(--blue-2);
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        text-align: center;
-    }
     .formulario_section .form_area{
         width: 90%;
-        display: flex;
-        justify-content: space-between;
     }
     .formulario_section form{
         width: 100%;
@@ -69,6 +53,7 @@
         text-align: left;
         gap: 0;
     }
-
-
+    .form-row{
+        width: 100%;
+    }
 }

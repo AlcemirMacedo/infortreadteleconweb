@@ -7,15 +7,15 @@
 
 @section('content')
     <x-banner background="{{ asset('images/contracheque.webp') }}">
-        iContracheque Online<br/>Consulta Online de Contracheques
+        iCE<br/>Compras e Estoque
     </x-banner>
 
     <section class="secundary">
 
         <div class="secundary_content" style="display: flex;">
             <div style="flex: 1">
-                <h1>iContracheque Online</h1>
-                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
+                <h1>Controle de Almoxarifado e Compras Públicas</h1>
+                <p>Sistema completo para emissão de requisições, ordens de compra, entradas e saídas de materiais. Permite gestão por setor e garante maior organização e rastreabilidade dos recursos físicos da administração pública.</p>
 
                 <x-links-relacionados>
                 </x-links-relacionados>

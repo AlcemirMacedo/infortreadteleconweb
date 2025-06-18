@@ -7,15 +7,15 @@
 
 @section('content')
 <x-banner background="{{ asset('images/stfolha_background.jpg') }}">
-    STFolha <br/> Folha de Pagamento para o Setor Público
+    iE-Notas <br/> Emissão de Notas Fiscais Eletrônicas
 </x-banner>
 
 <section class="stfolha_section secundary">
 
     <div class="secundary_content">
         <div>
-            <h1>STFolha</h1>
-            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
+            <h1>iE-Notas</h1>
+            <p>Sistema da INFORTREAD para emissão e gerenciamento de notas fiscais eletrônicas, com geração e validação de arquivos XML. Facilita o controle fiscal e garante conformidade com os padrões exigidos por órgãos reguladores.</p>
             <x-links-relacionados>
             </x-links-relacionados>
         </div>
