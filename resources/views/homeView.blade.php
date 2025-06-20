@@ -223,13 +223,14 @@
 
     <section class="numbers">
         <div>
-            <pre data-target="250">+0</pre>
-            <p>Usuários de Sistemas em prefeituras</p>
-        </div>
-        <div>
             <pre data-target="800">+0</pre>
             <p>Clientes de internet banda larga ativos</p>
         </div>
+        <div>
+            <pre data-target="250">+0</pre>
+            <p>Usuários de Sistemas em prefeituras</p>
+        </div>
+
     </section>
 
     <section class="help_desk">
@@ -237,12 +238,11 @@
 
         <div class="help_content">
             <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ullamco laboris nis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ullamco laboris nis....  Saiba mais</p>
+                <p>Na INFORTREAD, oferecemos um suporte técnico ágil e humanizado para todos os nossos sistemas. Por meio do “Meu James”, o atendimento é iniciado de forma imediata via WhatsApp, com direcionamento direto para nossa equipe de especialistas.<br><br>Sempre que necessário, realizamos acesso remoto via AnyDesk para correções, orientações ou manutenções nos sistemas. Todos os atendimentos são registrados com segurança no sistema IXC, garantindo rastreabilidade e histórico completo.</p>
                 <button class="button_1">Pedir Suporte</button>
             </div>
             <div class="help_img">
-                <img src="{{ asset('images/help_desk_img.png') }}" alt="Help Desk">
+                <img src="{{ asset('images/help-desk-2.png') }}" alt="Help Desk">
             </div>
         </div>
     </section>
@@ -250,7 +250,7 @@
 </section>
 
 {{-- Depoimentos Section --}}
-<section class="depoimentos_section">
+{{-- <section class="depoimentos_section">
     <div class="title_depoimentos">
         <h2>Depoimentos</h2>
     </div>
@@ -311,7 +311,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 {{-- Nomeei o fomrulário e o rodapé como Rodapé --}}

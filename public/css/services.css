@@ -1,27 +1,35 @@
-.services_section{
+.services_section {
     margin-left: 18px;
     margin-right: 18px;
     margin-top: 100px;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     width: 85%;
 }
-.services_section .title_main{
+
+.services_section .title_main {
     margin-bottom: 50px;
     margin-top: 50px;
-    font-size: 30px;
+    font-size: 36px;
     color: var(--orange-1);
 }
-.services_section .cards_area{
+
+.services_section .cards_area {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     gap: 20px;
 }
-.services_section img{
-    width: 200px;
-}
-.services_section .sistems_card{
+
+/* .services_section img {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    width: 350px;
+} */
+
+.services_section .sistems_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,28 +41,33 @@
     transition: all 0.8s ease-in-out;
     opacity: 0;
     transform: translateY(40px);
-    transform:  opacity 0.6s ease-out, transform 0.2s ease-out;
+    transform: opacity 0.6s ease-out, transform 0.2s ease-out;
 }
-.sistems_card.visible{
+
+.sistems_card.visible {
     opacity: 1;
     transform: translateY(0);
 }
-.services_section .sistems_card:hover{
+
+.services_section .sistems_card:hover {
     background-color: var(--gray-1);
 }
-.services_section .sistems_card h1{
+
+.services_section .sistems_card h1 {
     width: 90%;
     margin: 10px;
     color: var(--orange-1);
 }
-.services_section .sistems_card h4{
+
+.services_section .sistems_card h4 {
     font-family: 'Braah';
     font-size: 14px;
     color: var(--gray-2);
     margin: 10px 20px;
     text-align: center;
 }
-.services_section .sistems_card h1::before{
+
+.services_section .sistems_card h1::before {
     content: url('../images/icon_title.png');
     display: inline-block;
     width: 13px;
@@ -62,7 +75,8 @@
     margin-right: 9px;
     margin-top: 20px;
 }
-.services_section .sistems_card p{
+
+.services_section .sistems_card p {
     font-family: 'Comfortaa';
     font-size: 14px;
     margin-left: 10px;
@@ -71,7 +85,8 @@
     text-align: center;
     cursor: default;
 }
-.services_section .sistems_card button{
+
+.services_section .sistems_card button {
     font-family: 'Comfortaa';
     font-size: 14px;
     color: var(--white);
@@ -84,14 +99,16 @@
     background: linear-gradient(to right, #E36600, #E32200);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
-.services{
+
+.services {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.services .service_card_area{
+
+.services .service_card_area {
     display: flex;
     background: url('../images/fiber_background-2.jpg');
     background-position: center;
@@ -101,55 +118,66 @@
     justify-content: center;
     text-align: center;
 }
-.services .service_card{
+
+.services .service_card {
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.services .dev-sis{
-    height: 350px;
+
+.services .dev-sis {
+    height: auto;
     background-color: black;
 }
-.services .dev-sis h3{
+
+.services .dev-sis h3 {
     font-size: 36px;
     width: 85%;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.services .dev-sis>div{
+
+.services .dev-sis>div {
     display: flex;
     width: 85%;
     gap: 20px;
     text-align: left;
 }
-.services .dev-sis>div p{
+
+.services .dev-sis>div p {
     flex: 1;
 }
-.services .dev-sis>div img{
+
+.services .dev-sis>div img {
     width: 450px;
     flex: 1;
+    margin-bottom: 30px;
 }
-.service_card_area .second_card h1{
+
+.service_card_area .second_card h1 {
     color: var(--white);
     font-size: 36px;
     margin-top: 30px;
     width: 85%;
     text-align: left;
 }
-.second_card .title{
+
+.second_card .title {
     width: 85%;
     background: rgba(0, 0, 0, 0.8);
 }
-.second_card .title h2{
+
+.second_card .title h2 {
     font-family: 'Braah';
     margin: 30px;
     font-size: 36px;
     color: var(--white);
     letter-spacing: 5px;
 }
-.second_card .title span{
+
+.second_card .title span {
     font-family: 'Braah';
     font-size: 45px;
     background-image: linear-gradient(to right, #E36600, #ED2600);
@@ -157,13 +185,15 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.second_card .area-content{
+
+.second_card .area-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.area-content .content-text{
+
+.area-content .content-text {
     border: 2px solid var(--orange-1);
     padding: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -171,7 +201,8 @@
     margin-top: 30px;
     margin-bottom: 50px;
 }
-.second_card .content-text span{
+
+.second_card .content-text span {
     font-family: 'Braah';
     font-size: 75px;
     line-height: 105%;
@@ -180,7 +211,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.second_card .separador span{
+
+.second_card .separador span {
     font-family: 'Braah';
     font-size: 75px;
     background-image: linear-gradient(to right, #E36600, #ED2600);
@@ -188,12 +220,15 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.services .service_card p{
+
+.services .service_card p {
     font-size: 14px;
     color: var(--white);
 }
-@media (max-width: 601px){
-    .services_section{
+
+
+@media (max-width: 601px) {
+    .services_section {
         margin-left: 18px;
         margin-right: 18px;
         margin-top: 44px;
@@ -202,42 +237,60 @@
         align-items: center;
         width: 90%;
     }
-    .services_section>h1{
+
+    .services_section>h1 {
         margin-bottom: 30px;
     }
 
-    .services_section img{
+    .services_section img {
         width: 100px;
     }
+    .title_main{
+        
+    }
 
-    .services_section .services div{
+    .services_section .services div {
         margin-bottom: 15px;
     }
-    .services_section .cards_area{
+
+    .services_section .cards_area {
         display: flex;
         flex-direction: column;
     }
 
-    .services_section .services .service_card h3{
+    .services_section .services .service_card h3 {
         font-size: 20px;
     }
 
-    .second_card .title h2{
+    .second_card .title {
+        width: 90%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .second_card .title h2 {
         font-family: 'Braah';
-        margin: 10px;
-        font-size: 29px;
+        margin: 30px;
+        font-size: 24px;
         color: var(--white);
         letter-spacing: 5px;
     }
 
-    .second_card .area-content{
+    .second_card .title span {
+        font-family: 'Braah';
+        font-size: 45px;
+        background-image: linear-gradient(to right, #E36600, #ED2600);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .second_card .area-content {
         flex-direction: column;
         gap: 0px;
         margin-bottom: 30px;
         margin-top: 30px;
     }
 
-    .area-content .content-text{
+    .area-content .content-text {
         border: 2px solid var(--orange-1);
         padding: 20px;
         background: rgba(0, 0, 0, 0.5);
@@ -246,18 +299,18 @@
         margin-bottom: 0;
     }
 
-    .service_card_area .second_card h1{
+    .service_card_area .second_card h1 {
         text-align: center;
     }
 
-    .second_card .separador{
+    .second_card .separador {
         transform: rotate(90deg);
     }
 
 
 
 
-    .services_section .sistems_card{
+    .services_section .sistems_card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -267,14 +320,17 @@
         border-radius: 10px;
         margin-bottom: 15px;
     }
-    .services_section .sistems_card:hover{
+
+    .services_section .sistems_card:hover {
         background-color: var(--gray-1);
     }
-    .services_section .sistems_card h1{
+
+    .services_section .sistems_card h1 {
         width: 90%;
         margin: 10px;
     }
-    .services_section .sistems_card h1::before{
+
+    .services_section .sistems_card h1::before {
         content: url('../images/icon_title.png');
         display: inline-block;
         width: 13px;
@@ -282,7 +338,8 @@
         margin-right: 9px;
         margin-top: 15px;
     }
-    .services_section .sistems_card p{
+
+    .services_section .sistems_card p {
         font-family: 'Comfortaa';
         font-size: 12px;
         margin-left: 10px;
@@ -291,7 +348,7 @@
         text-align: center;
     }
 
-    .services_section .sistems_card button{
+    .services_section .sistems_card button {
         font-family: 'Comfortaa';
         font-size: 12px;
         color: var(--white);
@@ -305,9 +362,40 @@
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     }
 
-    /* .services .service_card p{
-        font-size: 10px;
-        color: black;
-    } */
-}
+    .services .service_card {
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .services .dev-sis {
+        height: auto;
+        background-color: black;
+    }
+
+    .services .dev-sis h3 {
+        font-size: 36px;
+        width: 85%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services .dev-sis>div {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .services .dev-sis>div p {
+        flex: 1;
+    }
+
+    .services .dev-sis>div img {
+        width: 100%;
+        flex: 1;
+    }
+}

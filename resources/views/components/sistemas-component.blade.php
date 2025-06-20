@@ -1,6 +1,8 @@
 <section id="sistemas" class="services_section">
-    <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
-    <h1 class="title_main">Nossos Sistemas</h1>
+
+    <div>
+        <h1 class="title_main">Nossos Sistemas</h1>
+    </div>
 
     <div class="cards_area">
         <div class="sistems_card">
@@ -93,7 +95,7 @@
     {{-- <img src="{{ asset('images/services_icon.png') }} "alt="Serviços"> --}}
 
 
-    <div class="service_card_area">
+    <div class="service_card_area"">
         <div class="service_card second_card">
             <h1 class="title_main">Internet Fibra Óptica</h1>
             <hr>
@@ -103,22 +105,22 @@
             <div class="area-content">
                 <div class="content-text">
                     <span>10<br>MEGA</span>
-                    <p>Lorem ipsum dolor.</p>
-                </div>
-                <div class="separador"><span> >> </span></div>
-                <div class="content-text">
-                    <span>30<br>MEGA</span>
-                    <p>Lorem ipsum dolor.</p>
+                    <p>Plano Básico</p>
                 </div>
                 <div class="separador"><span> >> </span></div>
                 <div class="content-text">
                     <span>100<br>MEGA</span>
-                    <p>Lorem ipsum dolor.</p>
+                    <p>Plano Padrão</p>
                 </div>
                 <div class="separador"><span> >> </span></div>
                 <div class="content-text">
                     <span>200<br>MEGA</span>
-                    <p>Lorem ipsum dolor.</p>
+                    <p>Plano Rápido</p>
+                </div>
+                <div class="separador"><span> >> </span></div>
+                <div class="content-text">
+                    <span>300<br>MEGA</span>
+                    <p>Plano Ultra</p>
                 </div>
             </div>
         </div>
@@ -134,22 +136,26 @@
                     <svg class="linhas" width="100%" height="100%">
 
                         <!-- Manaquiri -->
-                        <path d="M 20 60 V 180 H 170" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
+                        <path d="M 20 60 V 180 H 170" stroke="#666" stroke-dasharray="1.5,2" fill="none"
+                            stroke-width="1" />
                         <circle cx="170" cy="180" r="4" fill="#E36600" />
                         <circle cx="20" cy="60" r="4" fill="#E36600" />
 
                         <!-- Careiro Várteza -->
-                        <path d="M 340 80 V 200 H 180" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
+                        <path d="M 340 80 V 200 H 180" stroke="#666" stroke-dasharray="1.5,2" fill="none"
+                            stroke-width="1" />
                         <circle cx="340" cy="80" r="4" fill="#E36600" />
                         <circle cx="180" cy="200" r="4" fill="#E36600" />
 
                         <!-- Careiro Castanho -->
-                        <path d="M 150 210 H 10 V 340" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
+                        <path d="M 150 210 H 10 V 340" stroke="#666" stroke-dasharray="1.5,2" fill="none"
+                            stroke-width="1" />
                         <circle cx="150" cy="210" r="4" fill="#E36600" />
                         <circle cx="10" cy="340" r="4" fill="#E36600" />
 
                         <!-- Urucurituba -->
-                        <path d="M 200 220 H 330 V 340" stroke="#666" stroke-dasharray="1.5,2" fill="none" stroke-width="1" />
+                        <path d="M 200 220 H 330 V 340" stroke="#666" stroke-dasharray="1.5,2" fill="none"
+                            stroke-width="1" />
                         <circle cx="200" cy="220" r="4" fill="#E36600" />
                         <circle cx="330" cy="340" r="4" fill="#E36600" />
                     </svg>
@@ -198,13 +204,18 @@
         <div class="service_card dev-sis">
             <h3>Desenvolvimento de Sisemas</h3>
             <div>
-                <p>Na Infortread Telecom, desenvolvemos sistemas personalizados — tanto desktop quanto online — utilizando tecnologia de ponta e as melhores práticas do mercado.<br>
-                <br>
-                Contamos com uma equipe dedicada de programadores e designers que trabalha em conjunto para criar soluções funcionais, modernas e com interfaces intuitivas, sempre alinhadas às necessidades do seu negócio.
-                <br>
-                <br>
-                Seja para automatizar processos, otimizar operações ou criar sistemas sob medida, oferecemos soluções eficientes, seguras e escaláveis que acompanham o crescimento da sua empresa.</p>
-                <img src="{{asset('images/dev-sistems.jpg')}}" alt="Devensolvimento de Sistemas">
+                <p>Na Infortread Telecom, desenvolvemos sistemas personalizados — tanto desktop quanto online —
+                    utilizando tecnologia de ponta e as melhores práticas do mercado.<br>
+                    <br>
+                    Contamos com uma equipe dedicada de programadores e designers que trabalha em conjunto para criar
+                    soluções funcionais, modernas e com interfaces intuitivas, sempre alinhadas às necessidades do seu
+                    negócio.
+                    <br>
+                    <br>
+                    Seja para automatizar processos, otimizar operações ou criar sistemas sob medida, oferecemos
+                    soluções eficientes, seguras e escaláveis que acompanham o crescimento da sua empresa.
+                </p>
+                <img src="{{ asset('images/dev-sys.png') }}" alt="Devensolvimento de Sistemas">
             </div>
 
         </div>

@@ -75,7 +75,7 @@
 
 }
 .help_section .help_desk img{
-    width: 300px;
+    width: 600px;
 }
 .help_section .help_desk .button_1{
     margin-bottom: 50px;
@@ -88,7 +88,7 @@
     /* Help Section */
     .help_section{
         width: 100%;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -98,7 +98,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        color: white;
+        color: rgb(0, 0, 0);
     }
     .help_section .numbers pre{
         font-size: 40px;
@@ -130,7 +130,7 @@
         text-align: center;
     }
     .help_section .help_desk img{
-        width: 185px;
+        width: 225px;
         margin-bottom: 20px;
     }
     .help_section .help_desk .button_1{
