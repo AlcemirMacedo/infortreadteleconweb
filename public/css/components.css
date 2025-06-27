@@ -59,3 +59,56 @@
 
 }
 
+.hr-sys{
+    width: 85%;
+    border-bottom:1px solid gray;
+    margin-bottom:30px;
+    padding-bottom:10px;
+}
+
+
+/* Componente dos links dos sistemas */
+.container-sis-components{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 85%;
+    margin: auto;
+}
+.sistemas-component{
+    padding: 5px 10px;
+    border: 1px solid var(--blue-2);
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.sistemas-component a{
+    width: 100%;
+    text-align: center;
+}
+.sistemas-component:hover{
+    background-color: var(--blue-2);
+    color: var(--white);
+}
+
+@media (max-width: 601px){
+    .container-sis-components{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .container-sis-components{
+        display: grid;
+        grid-template-columns: 2fr, 2fr;
+        margin-bottom: 0;
+    }
+    .hr-sys{
+        text-align: center;
+    }
+}

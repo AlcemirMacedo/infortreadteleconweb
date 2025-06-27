@@ -10,7 +10,7 @@ Route::post('/contato/enviar', [ContatoController::class, 'enviarContato'])->nam
 Route:: get('/stfolha', [MainController::class, 'stfolha']);
 Route:: get('/cconline', [MainController::class, 'cconline']);
 Route:: get('/sam', [MainController::class, 'sam']);
-Route:: get('/ienotas', [MainController::class, 'sam']);
+Route:: get('/ienotas', [MainController::class, 'ienotas']);
 Route:: get('ilicitacao', [MainController::class, 'ilicitacao']);
 Route:: get('/ice', [MainController::class, 'ice']);
 Route:: get('/ipatrimonial', [MainController::class, 'ipatrimonial']);

@@ -21,18 +21,6 @@
     margin-bottom: 30px;
 }
 
-.bot_venda_style{
-    width: 100%;
-    border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: var(--green-contact);
-    margin-bottom: 50px;
-    text-align: center;
-    cursor: pointer;
-    color: var(--white);
-    transition: all 0.3s ease-in-out;
-}
 .bot_venda_style:hover{
     background-color: var(--blue-2);
 }

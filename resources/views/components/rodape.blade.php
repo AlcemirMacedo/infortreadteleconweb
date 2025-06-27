@@ -1,28 +1,42 @@
 {{-- Formulário de Contato --}}
-<section id="contato" class="formulario_section">
 
+{{-- Validation error --}}
+@if ($errors->any())
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-danger alert-dismissible fade show text-center fixed-bottom" role="alert">
+                Preencha todos os campos do formulário
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+            </div>
+
+        </div>
+    </div>
+@endif
+
+<section id="contato" class="formulario_section">
 
     <h1 style="color: white; margin-top:23px; margin-bottom:14px">Entre em contato</h1>
 
     <div class="form_area">
         <form action="{{ route('contato.enviar') }}" method="POST">
             @csrf
+
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="nome">Nome / Empresa / Instituição</label>
-                    <input type="text" name="nome" class="form-control">
+                    <input type="text" name="nome" class="form-control" value="{{ old('nome')}}">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" class="form-control">
+                    <input type="email" name="email" class="form-control" value="{{ old('email') }}">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" class="form-control">
+                    <input type="tel" name="contato" class="form-control" value="{{ old('telefone') }}">
                 </div>
             </div>
             <div class="form-row">
@@ -35,33 +49,8 @@
                 <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
                 <button type="reset" class="button_1">Limpar</button>
             </div>
-            {{-- <div>
-                <label for="nome">Nome / Empresa / Instituição</label>
-                <input name="nome" type="text" required>
-            </div>
-
-            <div>
-                <label for="email">E-mail</label>
-                <input name="email" type="text" required>
-            </div>
-
-            <div>
-                <label for="contato">Contato Whatsapp</label>
-                <input name="contato" type="tel" required>
-            </div>
-
-            <div>
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" required name="texto" id="mensagem" rows="5" style="padding-top: 15px; word-wrap:break-word; overflow-wrap:break-word"></textarea>
-            </div>
-
-            <div style="display: flex; text-align: center; width:100%; justify-content:space-between; grid-column: span 2;">
-                <button type="submit" class="button_1"  style="margin-bottom: 20px">Enviar</button>
-                <button type="reset" class="button_1">Limpar</button>
-            </div> --}}
         </form>
     </div>
-
 
 </section>
 
@@ -69,11 +58,11 @@
     <div class="footer-content">
         <div class="footer-links">
             <ul>
-            <li>Início</li>
-            <li>Sobre a Infortread</li>
-            <li>Nossos Serviços</li>
-            <li>Onde Atuamos</li>
-            <li>Contatos</li>
+                <li><a href="/#home">Início</a></li>
+                <li><a href="/#sobre">A Infortread</a></li>
+                <li><a href="/#sistemas">Sistemas</a></li>
+                <li><a href="/#services">Serviços</a></li>
+                <li><a href="/#contato">Contatos</a></li>
             </ul>
         </div>
         <div class="footer-info">
@@ -89,3 +78,13 @@
         Desenvolvido por Infortread Telecom
     </div>
 </footer>
+@if ($errors->any())
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const section = document.getElementById('contato');
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+@endif

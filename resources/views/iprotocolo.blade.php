@@ -6,34 +6,34 @@
 @endsection
 
 @section('content')
-    <x-banner background="{{ asset('images/contracheque.webp') }}">
+    <x-banner background="{{ asset('images/protocolo.jpg') }}">
         iProtocolo
     </x-banner>
 
-    <section class="secundary">
+    <section class="stfolha_section secundary">
 
-        <div class="secundary_content" style="display: flex;">
-            <div style="flex: 1">
+        <div class="secundary_content">
+            <div>
                 <h1>Protocolo e Encaminhamento de Documentos Oficiais</h1>
-                <p>Sistema destinado ao registro e acompanhamento de ofícios e documentos enviados entre setores. Garante rastreabilidade, histórico de tramitações e organização eficiente dos processos administrativos internos.</p>
-
+                <p>Sistema destinado ao registro e acompanhamento de ofícios e documentos enviados entre setores. Garante
+                    rastreabilidade, histórico de tramitações e organização eficiente dos processos administrativos
+                    internos.</p>
                 <x-links-relacionados>
                 </x-links-relacionados>
-
             </div>
 
-            <div style="flex: 1; text-align:center">
+            <div>
                 <img src="{{ asset('images/sis_folha-pagamento.png') }}" alt="STFolha">
             </div>
         </div>
-
         <x-bot-venda>
+            Contratar iProtocolo
         </x-bot-venda>
 
-        <x-sistemas-component></x-sistemas-component>
-
     </section>
+    <div class="hr-sys"> Veja Também:</div>
+    <x-links-components></x-links-components>
 
-
-    <x-rodape></x-rodape>
+    <x-rodape>
+    </x-rodape>
 @endsection

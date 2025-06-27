@@ -3,45 +3,7 @@
 @section('content')
 
 {{-- Banner e Menu --}}
-{{-- <section id="home" class="banner">
-    <div class="fade-bg">
-        <header class="bots_fixed">
-            <div class="menu-toggle" onclick="mostramenu()">
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
 
-
-
-            <div class="share" style="display: none" onclick="compartilharPagina()">
-                <div>
-                    <img src="{{ asset('images/share-bgt.png') }}" height="20" width="20" alt="Compartilhar">
-                </div>
-            </div>
-        </header>
-
-        <div class="banner-content">
-            @if(session('success'))
-                <div class="successMsg" style="position: fixed; bottom: 15px; z-index:5000; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px; margin-bottom: 20px;">
-                    {{ session('success') }}
-                </div>
-            @endif
-            <img src="{{ asset('images/logo-w.png') }}" alt="Infortread Telecom">
-            <h2>A melhor solução para sua <br/>empresa ou instituição</h2>
-
-
-            <div class="area-cta">
-                <div class="btn-cta" onclick="abrirWhatsapp()">
-                    <p>Entrar em contato</p>
-                    <img src="{{ asset('images/wsppIco.png') }}" alt="Contato Whatsapp">
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
 <x-banner>
     a melhor solução para <br/>sua empresa ou instituição
 </x-banner>
@@ -113,107 +75,100 @@
 </section>
 
 {{-- Sessão de Sistemas e serviços --}}
-{{-- <section id="sistemas" class="services_section">
-    <img src="{{ asset('images/system_infortread_services.png') }}" alt="Sistemas">
-    <h1 class="title_main">Nossos Sistemas</h1>
+<section id="sistemas" class="services_section">
+
+    <div>
+        <h1 class="title_main">Nossos Sistemas</h1>
+    </div>
 
     <div class="cards_area">
         <div class="sistems_card">
             <h1>STFolha</h1>
             <h4>Folha de Pagamento para o Setor Público</h4>
-            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
+            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração
+                direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal
+                e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
             <a href="/stfolha"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iContracheque Online</h1>
             <h4>Consulta Online de Contracheques</h4>
-            <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
+            <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao
+                banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de
+                RH, otimizando tempo e recursos.</p>
             <a href="/cconline"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>SAM - Sistema de Arrecadação Municipal</h1>
             <h4>Gestão Tributária e Emissão de DUAMs</h4>
-            <p>Solução completa para arrecadação de tributos municipais, como alvarás, construção, notas avulsas, IPTU, ITBI e água. Permite a geração de DUAMs com pagamento via Pix, oferecendo agilidade tanto para o contribuinte quanto para a gestão pública.</p>
-            <button>Contratar</button>
+            <p>Solução completa para arrecadação de tributos municipais, como alvarás, construção, notas avulsas, IPTU,
+                ITBI e água. Permite a geração de DUAMs com pagamento via Pix, oferecendo agilidade tanto para o
+                contribuinte quanto para a gestão pública.</p>
+            <a href="/sam"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iE-Notas</h1>
             <h4>Emissão de Notas Fiscais Eletrônicas</h4>
-            <p>Sistema da INFORTREAD para emissão e gerenciamento de notas fiscais eletrônicas, com geração e validação de arquivos XML. Facilita o controle fiscal e garante conformidade com os padrões exigidos por órgãos reguladores.</p>
-            <button>Contratar</button>
+            <p>Sistema da INFORTREAD para emissão e gerenciamento de notas fiscais eletrônicas, com geração e validação
+                de arquivos XML. Facilita o controle fiscal e garante conformidade com os padrões exigidos por órgãos
+                reguladores.</p>
+            <a href="/ienotas"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iLicitação</h1>
             <h4>Gestão de Licitações Públicas com Integração ao E-Contas</h4>
-            <p>Solução voltada ao gerenciamento de processos licitatórios, com funcionalidades que organizam e registram todas as etapas das licitações. Já integrada ao E-Contas, atende às exigências atuais dos tribunais de contas de forma prática e segura.</p>
-            <button>Contratar</button>
+            <p>Solução voltada ao gerenciamento de processos licitatórios, com funcionalidades que organizam e registram
+                todas as etapas das licitações. Já integrada ao E-Contas, atende às exigências atuais dos tribunais de
+                contas de forma prática e segura.</p>
+            <a href="/ilicitacao"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iCE - Compras e Estoque</h1>
             <h4>Controle de Almoxarifado e Compras Públicas</h4>
-            <p>Sistema completo para emissão de requisições, ordens de compra, entradas e saídas de materiais. Permite gestão por setor e garante maior organização e rastreabilidade dos recursos físicos da administração pública.</p>
-            <button>Contratar</button>
+            <p>Sistema completo para emissão de requisições, ordens de compra, entradas e saídas de materiais. Permite
+                gestão por setor e garante maior organização e rastreabilidade dos recursos físicos da administração
+                pública.</p>
+            <a href="/ice"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iPatrimonial</h1>
             <h4>Gestão e Controle de Patrimônio Público</h4>
-            <p>Sistema que realiza o registro e controle dos bens patrimoniais de uma entidade, abrangendo desde móveis até imóveis. Permite auditorias eficazes, evita perdas e oferece total visibilidade sobre o patrimônio público.</p>
-            <button>Contratar</button>
+            <p>Sistema que realiza o registro e controle dos bens patrimoniais de uma entidade, abrangendo desde móveis
+                até imóveis. Permite auditorias eficazes, evita perdas e oferece total visibilidade sobre o patrimônio
+                público.</p>
+            <a href="/ipatrimonial"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>iProtocolo</h1>
             <h4>Protocolo e Encaminhamento de Documentos Oficiais</h4>
-            <p>Sistema destinado ao registro e acompanhamento de ofícios e documentos enviados entre setores. Garante rastreabilidade, histórico de tramitações e organização eficiente dos processos administrativos internos.</p>
-            <button>Contratar</button>
+            <p>Sistema destinado ao registro e acompanhamento de ofícios e documentos enviados entre setores. Garante
+                rastreabilidade, histórico de tramitações e organização eficiente dos processos administrativos
+                internos.</p>
+            <a href="/iprotocolo"><button>Contratar</button></a>
         </div>
 
         <div class="sistems_card">
             <h1>Consultoria em E-Social para Entidades Públicas</h1>
             <h4>Apoio Técnico para Conformidade Trabalhista</h4>
-            <p>Serviço de consultoria especializada para prefeituras, câmaras e órgãos públicos que necessitam atender às exigências do E-Social. Auxiliamos na adequação de processos e fluxos de dados, garantindo conformidade legal e evitando sanções.</p>
-            <button>Contratar</button>
+            <p>Serviço de consultoria especializada para prefeituras, câmaras e órgãos públicos que necessitam atender
+                às exigências do E-Social. Auxiliamos na adequação de processos e fluxos de dados, garantindo
+                conformidade legal e evitando sanções.</p>
+            <a href="/consultoria"><button>Saiba mais</button></a>
         </div>
 
     </div>
 
-    <div id="services" class="services">
-        <img src="{{ asset('images/services_icon.png') }} "alt="Serviços">
-        <h1 class="title_main">Nossos Serviços</h1>
+</section>
 
-        <div class="service_card_area">
-            <div class="service_card">
-                <div>
-                    <img src="{{ asset('images/developer_icon.png') }}" alt="Desenvolvimento de Sistemas">
-                </div>
-                <div>
-                    <h3>Desenvolvimento de Sisemas</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  <a href="#">Saiba mais</a></span></p>
-                </div>
-            </div>
-
-            <div class="service_card second_card">
-                <div>
-                    <img src="{{ asset('images/fiber_net.png') }}" alt="Desenvolvimento de Sistemas">
-                </div>
-                <div>
-                    <h3>Internet Fibra Óptica</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco <span>...  <a href="#">Saiba mais</a></span></p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section> --}}
-
-<x-sistemas-component></x-sistemas-component>
+<x-sistemas-component>
+</x-sistemas-component>
 
 
 
@@ -239,7 +194,10 @@
         <div class="help_content">
             <div>
                 <p>Na INFORTREAD, oferecemos um suporte técnico ágil e humanizado para todos os nossos sistemas. Por meio do “Meu James”, o atendimento é iniciado de forma imediata via WhatsApp, com direcionamento direto para nossa equipe de especialistas.<br><br>Sempre que necessário, realizamos acesso remoto via AnyDesk para correções, orientações ou manutenções nos sistemas. Todos os atendimentos são registrados com segurança no sistema IXC, garantindo rastreabilidade e histórico completo.</p>
-                <button class="button_1">Pedir Suporte</button>
+                <x-bot-venda>
+                    Pedir Suporte
+                </x-bot-venda>
+                {{-- <button class="button_1">Pedir Suporte</button> --}}
             </div>
             <div class="help_img">
                 <img src="{{ asset('images/help-desk-2.png') }}" alt="Help Desk">
@@ -250,7 +208,7 @@
 </section>
 
 {{-- Depoimentos Section --}}
-{{-- <section class="depoimentos_section">
+<section class="depoimentos_section">
     <div class="title_depoimentos">
         <h2>Depoimentos</h2>
     </div>
@@ -311,7 +269,7 @@
             </div>
         </div>
     </div>
-</section> --}}
+</section>
 
 
 {{-- Nomeei o fomrulário e o rodapé como Rodapé --}}

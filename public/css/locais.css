@@ -15,26 +15,22 @@
     color: var(--orange-1);
     font-family: 'Braah', sans-serif;
 }
-
-.mapa_area{
+.container_mapa{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.container_mapa .mapa_area{
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mapa_area .locais_list div{
-    display: flex;
-    flex-wrap: wrap;
-    font-size:14px;
-    text-align: left;
-}
-
-.mapa_area .locais_list h3{
-    font-size: 20px;
-}
-
-.mapa_area .locais_list div li{
-    line-height: 20px;
+.mapa_area>div{
+    flex:1;
 }
 
 .locais_section h1{
@@ -85,12 +81,16 @@
         color: var(--orange-1);
         font-family: 'Braah', sans-serif;
     }
+    .container_mapa{
+        flex-direction: column;
+    }
     .mapa_area{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 90%;
+        height: 350px;
     }
     .mapa_area .locais_list h3{
         font-size: 14px;

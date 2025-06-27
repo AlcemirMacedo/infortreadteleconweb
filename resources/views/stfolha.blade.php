@@ -14,8 +14,8 @@
 
     <div class="secundary_content">
         <div>
-            <h1>STFolha</h1>
-            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
+            <h1>iContracheque Online</h1>
+                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
             <x-links-relacionados>
             </x-links-relacionados>
         </div>
@@ -25,17 +25,13 @@
         </div>
     </div>
     <x-bot-venda>
-
+        Contratar STFolha
     </x-bot-venda>
 
-    <x-sistemas-component></x-sistemas-component>
 </section>
+<div class="hr-sys"> Veja Também:</div>
+<x-links-components></x-links-components>
 
 <x-rodape>
 </x-rodape>
-@endsection
-
-@section('link_css')
-    <link rel="stylesheet" href="{{ asset('css/secundary_pages.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/components.css') }}">
 @endsection

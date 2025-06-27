@@ -19,7 +19,7 @@ class ContatoController extends Controller // Corrigido!
         ]);
 
         // Envia email para o Administrador do site
-        Mail::to('alcemirmacedo@gmail.com')->send(new ContatoMail($dados));
+        Mail::to('contato@infortread.com.br')->send(new ContatoMail($dados));
 
         // Envia um e-mail automático de resposta para quem enviou o formulário
         Mail::to($dados['email'])->send(new ContatoRespostaMail($dados));

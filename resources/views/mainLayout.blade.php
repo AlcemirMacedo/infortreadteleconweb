@@ -35,7 +35,8 @@
     <div style="justify-content:center">
         <div class="login">
             {{-- Olá, {{ $name }} --}}
-            {{ date('d/m/Y | H:i:s') }}
+            {{-- {{ date('d/m/Y | H:i:s') }} --}}
+            <a href="https://clienteweb.infortread.com.br/central_assinante_web/login" target="_blanck">Central do Assinante</a>
         </div>
         {{-- <div class="cadastrar">
             Cadastrar
@@ -48,6 +49,7 @@
 
 
     <script src="{{ asset('js/homeScript.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 
 </body>
 </html>

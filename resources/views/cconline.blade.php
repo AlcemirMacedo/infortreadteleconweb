@@ -6,32 +6,32 @@
 @endsection
 
 @section('content')
-    <x-banner background="{{ asset('images/contracheque.webp') }}">
-        iContracheque Online<br/>Consulta Online de Contracheques
-    </x-banner>
+<x-banner background="{{ asset('images/stfolha_background.jpg') }}">
+    iContracheque<br>Online
+</x-banner>
 
-    <section class="secundary">
+<section class="stfolha_section secundary">
 
-        <div class="secundary_content" style="display: flex;">
-            <div style="flex: 1">
-                <h1>iContracheque Online</h1>
-                <p>Ferramenta da INFORTREAD que permite o acesso digital aos contracheques dos servidores. Integrado ao banco de dados do STFolha, proporciona autonomia aos colaboradores e reduz a demanda sobre o setor de RH, otimizando tempo e recursos.</p>
-
-                <x-links-relacionados>
-                </x-links-relacionados>
-
-            </div>
-
-            <div style="flex: 1; text-align:center">
-                <img src="{{ asset('images/sis_folha-pagamento.png') }}" alt="STFolha">
-            </div>
+    <div class="secundary_content">
+        <div>
+            <h1>STFolha</h1>
+            <p>Sistema desenvolvido para o processamento da folha de pagamento dos servidores públicos, com integração direta ao E-Contas (TCE) e ao E-Social (Receita Federal). Automatiza rotinas, garante conformidade legal e simplifica a prestação de contas para prefeituras, câmaras e fundos públicos.</p>
+            <x-links-relacionados>
+            </x-links-relacionados>
         </div>
-        <x-bot-venda>
 
-        </x-bot-venda>
-        <x-sistemas-component></x-sistemas-component>
-    </section>
+        <div>
+            <img src="{{ asset('images/sis_folha-pagamento.png') }}" alt="STFolha">
+        </div>
+    </div>
+    <x-bot-venda>
+        Contratar iContracheque Online
+    </x-bot-venda>
 
+</section>
+<div class="hr-sys"> Veja Também:</div>
+<x-links-components></x-links-components>
 
-    <x-rodape></x-rodape>
+<x-rodape>
+</x-rodape>
 @endsection
