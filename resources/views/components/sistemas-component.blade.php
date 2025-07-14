@@ -7,7 +7,7 @@
             <h1 class="title_main">Internet Fibra Óptica</h1>
             <hr>
             <div class="title">
-                <h2>Internet Fibra óptica a partir de <span>R$ 89,90</span></h2>
+                <h2>Internet de Fibra óptica a partir de <span>R$ 89,90</span></h2>
             </div>
             <div class="area-content">
                 <div class="content-text">
@@ -88,21 +88,15 @@
 
                 <div class="text_mapa">
                     <p>
-                        Atualmente fornecemos internet banda larga para os municípios do interior do Amazonas, uma
-                        conquista
-                        que representa acesso à informação, à ducação, à saúde digital e à oportunidade de
-                        desenvolvimento
-                        econômico para comunidades isoladas. A conectividade transforma realidades, permitindo que
-                        moradores
-                        dessas regiões estejam conectados ao mundo, mesmo a quilômetros de distância dos grandes centros
-                        urbanos.<br><br>
-                        Atualmente contemplamos os municípios de Manaquiri, Careiro Castanho, Careiro da Várzea e
-                        Urucurituba. Futuramente estaremos atuando também em Autazes e expandindo nossa presença para
-                        outras
-                        localidades estratégicas, com o objetivo de reduzir a desigualdade digital na Amazônia e
-                        promover a
-                        inclusão tecnológica de forma sustentável e contínua.
-
+                        Hoje levamos internet banda larga para várias cidades do interior do Amazonas, tornando possível
+                        o acesso à informação, à educação, à saúde digital e a novas oportunidades de desenvolvimento
+                        para quem vive em comunidades isoladas. A conexão faz a diferença: transforma histórias,
+                        aproxima pessoas e permite que, mesmo a muitos quilômetros dos grandes centros, todos estejam
+                        ligados ao mundo.<br><br>
+                        Atualmente, já atendemos Manaquiri, Careiro Castanho, Careiro da Várzea e Urucurituba — e vem
+                        mais por aí! Em breve, estaremos também em Autazes e em outras regiões estratégicas, sempre com
+                        o propósito de diminuir a desigualdade digital na Amazônia e incentivar a inclusão tecnológica
+                        de forma sustentável e contínua.
                     </p>
                 </div>
             </div>
@@ -110,7 +104,7 @@
         </section>
 
         <div class="service_card dev-sis">
-            <h3>Desenvolvimento de Sisemas</h3>
+            <h3>Desenvolvimento de Sistemas</h3>
             <div>
                 <p>Na Infortread Telecom, desenvolvemos sistemas personalizados - tanto desktop quanto online -
                     utilizando tecnologia de ponta e as melhores práticas do mercado.<br>
@@ -125,6 +119,19 @@
                 </p>
 
                 <img src="{{ asset('images/dev-sys.png') }}" alt="Devensolvimento de Sistemas">
+            </div>
+
+        </div>
+
+
+        <div class="service_card dev-sis consultoria">
+            <h3>Consultoria em E-Social para Entidades Públicas</h3>
+            <div>
+                <p><span>Apoio Técnico para Conformidade Trabalhista</span><br><br> Serviço de consultoria especializada para prefeituras, câmaras e órgãos públicos que necessitam atender às exigências do E-Social. Auxiliamos na adequação de processos e fluxos de dados, garantindo conformidade legal e evitando sanções.
+                    
+                </p>
+
+                <img src="{{ asset('images/esocial-croped.jpeg') }}" alt="Devensolvimento de Sistemas">
             </div>
 
         </div>

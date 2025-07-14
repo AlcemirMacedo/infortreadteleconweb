@@ -66,10 +66,10 @@
             </ul>
         </div>
         <div class="footer-info">
-            Rua Djalma Dutra, nº 44, N. Sra das Graças<br/>
-            (92) 3303-8200 | (92) 3016-7542<br/>
-            (92) 98189-8765 | (92) 99367-6238<br/>
-            contato@infortread.com.br | infortread@infortread.com.br<br/>
+            Rua Domingos Lima, nº 44, N. Sra das Graças<br/>
+            0800 456 1010 | (92) 3302-8200<br/>
+            (92) 98412-6978 (James)<br/>
+            internet@infortread.com.br | infortread.am@gmail.com<br/>
             facebook.com/infortread<br/>
             infortread.com.br
         </div>

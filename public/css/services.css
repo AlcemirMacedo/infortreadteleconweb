@@ -100,6 +100,13 @@
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+.service_card .cards_area .last_card{
+    background-image: url('../images/torre-internet.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .services {
     margin-top: 100px;
     display: flex;
@@ -154,6 +161,21 @@
     width: 450px;
     flex: 1;
     margin-bottom: 30px;
+}
+
+.services .consultoria{
+    background-color: var(--gray-1);
+}
+
+.services .consultoria>div{
+    flex-direction: row-reverse;
+}
+.services .consultoria>div p{
+    color: var(--blue-2);
+}
+.services .consultoria>div p span{
+    font-weight: bolder;
+    color: var(--gray-2);
 }
 
 .service_card_area .second_card h1 {
@@ -245,9 +267,7 @@
     .services_section img {
         width: 100px;
     }
-    .title_main{
-        
-    }
+
 
     .services_section .services div {
         margin-bottom: 15px;
@@ -293,7 +313,6 @@
     .area-content .content-text {
         border: 2px solid var(--orange-1);
         padding: 20px;
-        background: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         margin-top: 0;
         margin-bottom: 0;
@@ -306,10 +325,6 @@
     .second_card .separador {
         transform: rotate(90deg);
     }
-
-
-
-
     .services_section .sistems_card {
         display: flex;
         flex-direction: column;
@@ -363,7 +378,7 @@
     }
 
     .services .service_card {
-        background: rgba(0, 0, 0, 0.8);
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -371,7 +386,6 @@
 
     .services .dev-sis {
         height: auto;
-        background-color: black;
     }
 
     .services .dev-sis h3 {
@@ -397,5 +411,8 @@
     .services .dev-sis>div img {
         width: 100%;
         flex: 1;
+    }
+    .services .consultoria{
+        background-color: var(--gray-1);
     }
 }

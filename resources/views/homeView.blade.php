@@ -154,14 +154,9 @@
             <a href="/iprotocolo"><button>Contratar</button></a>
         </div>
 
-        <div class="sistems_card">
-            <h1>Consultoria em E-Social para Entidades Públicas</h1>
-            <h4>Apoio Técnico para Conformidade Trabalhista</h4>
-            <p>Serviço de consultoria especializada para prefeituras, câmaras e órgãos públicos que necessitam atender
-                às exigências do E-Social. Auxiliamos na adequação de processos e fluxos de dados, garantindo
-                conformidade legal e evitando sanções.</p>
-            <a href="/consultoria"><button>Saiba mais</button></a>
-        </div>
+        {{-- <div class="sistems_card last_card">
+            <img src="{{ asset('images/torre-internet.jpg') }}" alt="">
+        </div> --}}
 
     </div>
 

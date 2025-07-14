@@ -25,11 +25,11 @@
     </div>
     <nav>
         <ul>
-            <li><a href="/#home">Início</a></li>
-            <li><a href="/#sobre">A Infortread</a></li>
-            <li><a href="/#sistemas">Sistemas</a></li>
-            <li><a href="/#services">Serviços</a></li>
-            <li><a href="/#contato">Contatos</a></li>
+            <li><a href="/#home" onclick="mostramenu()">Início</a></li>
+            <li><a href="/#sobre" onclick="mostramenu()">A Infortread</a></li>
+            <li><a href="/#sistemas" onclick="mostramenu()">Sistemas</a></li>
+            <li><a href="/#services" onclick="mostramenu()">Serviços</a></li>
+            <li><a href="/#contato" onclick="mostramenu()">Contatos</a></li>
         </ul>
     </nav>
     <div style="justify-content:center">
