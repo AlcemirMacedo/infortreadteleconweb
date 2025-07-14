@@ -25,14 +25,12 @@ RUN chmod -R 775 storage bootstrap/cache && \
 # Instala dependências do Laravel
 RUN composer install --no-dev --optimize-autoloader
 
-# ⚠️ Os comandos Artisan precisam de APP_KEY e .env válidos
-# Certifique-se de que Railway tenha a variável APP_KEY no painel
-RUN php artisan config:clear && \
-    php artisan config:cache && \
-    php artisan route:cache
+# Copia script de inicialização
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-# Expondo porta
+# Expondo porta padrão (Railway define via variável $PORT)
 EXPOSE 80
 
-# Comando de inicialização do Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "${PORT:-8000}"]
+# Comando de inicialização
+CMD ["/entrypoint.sh"]
