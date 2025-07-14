@@ -32,7 +32,7 @@ RUN php artisan config:clear && \
     php artisan route:cache
 
 # Expondo porta
-EXPOSE 8000
+EXPOSE 80
 
 # Comando de inicialização do Laravel
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "${PORT:-8000}"]
