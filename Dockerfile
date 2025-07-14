@@ -28,6 +28,20 @@ COPY . .
 # Instala dependências Laravel
 RUN composer install --no-dev --optimize-autoloader
 
+RUN php artisan config:clear && php artisan config:cache
+
+RUN php artisan route:cache
+
+RUN php artisan config:clear && php artisan config:cache
+
+RUN chmod -R 775 storage bootstrap/cache
+
+# Corrige permissões do Laravel
+RUN mkdir -p storage/logs && \
+    chmod -R 775 storage bootstrap/cache && \
+    chown -R www-data:www-data storage bootstrap/cache
+
+
 # Permissões da pasta de storage e cache
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
