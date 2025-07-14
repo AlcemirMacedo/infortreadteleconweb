@@ -1,9 +1,10 @@
 {
     "private": true,
     "type": "module",
+    "name": "my-package",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
+        "build": "babel src -b lib",
+        "dev": "jest"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
