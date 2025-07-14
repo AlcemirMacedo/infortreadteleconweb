@@ -1,19 +1,9 @@
 FROM php:8.2-fpm
 
-# Instala extensões do PHP
+# Instala extensões do PHP necessárias ao Laravel
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    libpng-dev \
-    libjpeg-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
-    unzip \
-    curl \
-    git \
-    npm \
-    libzip-dev \
-    libpq-dev \
+    git curl zip unzip libpng-dev libjpeg-dev libfreetype6-dev \
+    libonig-dev libxml2-dev libzip-dev npm \
     && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip
 
 # Instala Composer
@@ -22,29 +12,27 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Define diretório de trabalho
 WORKDIR /var/www
 
-# Copia o projeto
+# Copia arquivos do projeto Laravel
 COPY . .
 
-# Instala dependências Laravel
-RUN composer install --no-dev --optimize-autoloader
+# Garante que os diretórios existem
+RUN mkdir -p storage/logs bootstrap/cache
 
-RUN php artisan config:clear && php artisan config:cache
-
-RUN php artisan route:cache
-
-RUN php artisan config:clear && php artisan config:cache
-
-RUN chmod -R 775 storage bootstrap/cache
-
-# Corrige permissões do Laravel
-RUN mkdir -p storage/logs && \
-    chmod -R 775 storage bootstrap/cache && \
+# Ajusta permissões ANTES de rodar Artisan
+RUN chmod -R 775 storage bootstrap/cache && \
     chown -R www-data:www-data storage bootstrap/cache
 
+# Instala dependências do Laravel
+RUN composer install --no-dev --optimize-autoloader
 
-# Permissões da pasta de storage e cache
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+# ⚠️ Os comandos Artisan precisam de APP_KEY e .env válidos
+# Certifique-se de que Railway tenha a variável APP_KEY no painel
+RUN php artisan config:clear && \
+    php artisan config:cache && \
+    php artisan route:cache
 
+# Expondo porta
 EXPOSE 8000
 
-CMD php artisan serve --host=0.0.0.0 --port=8000
+# Comando de inicialização do Laravel
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
